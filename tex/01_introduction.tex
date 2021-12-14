@@ -1,4 +1,16 @@
+% 01_economic_feedback_schema.png
+% 01_error_model.png
+% 01_exchange_only_feedback_schema.png
+% 01_external_transactions.png
+% 01_information_transmission.png
+% 01_control_solution.png
+% 01_equilibrium_aggregate_model.png
+% 01_exchange_only_aggregate_model.png
+% 01_exchange_transactions.png
+% 01_feedback_schema.png
+
 \section{Introduction}
+
 
 The core model by which we understand economic processes is the interaction of and supply and
 demand. This model has been considerably succesful in understanding why markets tend towards
@@ -36,7 +48,7 @@ This model suggests macro-economic conditions as shown in Figure
 
 \begin{figure}
 \centering
-\includegraphics{img/example.pdf}
+\includegraphics{example}
 \caption{Supply and Demand Model Prediction}
 \label{fig:supply_and_demand_prediction}
 \end{figure}
@@ -46,16 +58,16 @@ Figure \ref{fig:ui_all_data} shows a vastly differing results.
 
 \begin{figure}
 \centering
-\includegraphics{img/example.pdf}
+\includegraphics{example}
 \caption{Inflation Rate vs. Unemployment Data}
 \label{fig:ui_all_data}
 \end{figure}
 
 \begin{figure}
-% <div id="fig_ui"></div>
 \centering
-\includegraphics{img/example.pdf}
+\includegraphics{example}
 \caption{Unemployment vs. Inflation Rate}
+\label{fig:ui}
 \end{figure}
 
 Considering that any currency mechanism is absent from this model of supply and demand is seems
@@ -75,10 +87,11 @@ system for economies, the currency, can indeed be destructured and rebuilt from 
 Thus we take a different approach, viewing the economic problem more like a robotics problem,
 something that can be built from the bottom up, completely to our own specification, viewing
 currency as an engineering control systems problem. To introduce the notion of a control system,
-Figure 1.1 shows the standard schema for a univariate single input single output (SISO) control
-system. This approach is now possible due to the advances in digital technologies and the relative
-ease in which a new digital currency can be designed, built and tested, compared to the practical
-and technical limitations in applying similar solutions to paper currencies.
+Figure \ref{fig:feedback_schema} shows the standard schema for a univariate single input single
+output (SISO) control system. This approach is now possible due to the advances in digital
+technologies and the relative ease in which a new digital currency can be designed, built and
+tested, compared to the practical and technical limitations in applying similar solutions to paper
+currencies.
 
 The key components in the analysis and design of a digital currency are:
 
@@ -102,10 +115,9 @@ e) Understand as much as possible ways to prevent internal or external interacti
 \subsection{Destructuring and Negative Feedback}
 
 \begin{figure}
-% <div id="fig_feedback_schema"></div>
-\centering
-\includegraphics{img/example.pdf}
+\includegraphics[scale=0.28]{01_feedback_schema}
 \caption{Control System Schema}
+\label{fig:feedback_schema}
 \end{figure}
 
 A simple example of a control system is a thermostat which adjusts the heating of a room. Some
@@ -115,29 +127,29 @@ reference signal). The design of control systems have the general guiding proper
 our design approach, namely that our ability to correctly model the plant, stems must be able to
 correct for errors, noise and/or energy disipation in the plant and the the minimum number of
 control variables is determined by the number of variables that the control system seeks to control.
-A control system for the economy looks like Figure 1.2.
+A control system for the economy looks like Figure \ref{fig:economic_feedback_schema}.
 
 \begin{figure}
-% <div id="fig_economic_feedback_schema"></div>
 \centering
-\includegraphics{img/example.pdf}
+\includegraphics[scale=0.28]{01_economic_feedback_schema}
 \caption{Control System Schema for an Economy}
+\label{fig:economic_feedback_schema}
 \end{figure}
 
-Zooming into the currency box in Figure 1.2, we can specify the classes of transactions that a
-currency implements. Transaction classes include the exchange of money in return for goods or
-services, lending money now in exchange for payment later, and exchanging money in exchange for a
-change in a contract. This way of viewing currency indicates a control problem because the system
-has a single means to control money supply, but at least four classes of components that require
-control and interact with the other classes.
+Zooming into the currency box in Figure \ref{fig:economic_feedback_schema}, we can specify the
+classes of transactions that a currency implements. Transaction classes include the exchange of
+money in return for goods or services, lending money now in exchange for payment later, and
+exchanging money in exchange for a change in a contract. This way of viewing currency indicates a
+control problem because the system has a single means to control money supply, but at least four
+classes of components that require control and interact with the other classes.
 
 \subsubsection{Control Problem}
 
 \begin{figure}
-% <div id="fig_control_problem"></div>
 \centering
-\includegraphics{img/example.pdf}
+\includegraphics{example}
 \caption{Control Problem}
+\label{fig:control_problem}
 \end{figure}
 
 The passing around of paper currency, in conjunction with contract agreements, is used to carry
@@ -152,52 +164,50 @@ destructuring each transaction class and examining the way it interacts with oth
 classes, step by step.
 
 \begin{figure}
-% <div id="fig_exchange_transactions"></div>
 \centering
-\includegraphics{img/example.pdf}
+\includegraphics{example}
 \caption{Exchange Transactions}
+\label{fig:exchange_transactions}
 \end{figure}
 
 \begin{figure}
-% <div id="fig_time_transactions"></div>
 \centering
-\includegraphics{img/example.pdf}
+\includegraphics{example}
 \caption{Time Transactions}
+\label{fig:time_transactions}
 \end{figure}
 
-
 \begin{figure}
-% <div id="fig_contract_transactions"></div>
 \centering
-\includegraphics{img/example.pdf}
+\includegraphics[scale=0.28]{01_contract_transactions}
 \caption{Contract Transactions}
+\label{fig:contract_transactions}
 \end{figure}
 
-
 \begin{figure}
-% <div id="fig_external_transactions"></div>
 \centering
-\includegraphics{img/example.pdf}
+\includegraphics{example}
 \caption{External Transactions}
+\label{fig:external_transactions}
 \end{figure}
 
 \section{Error Correction}
 
 \begin{figure}
-% <div id="fig_exchange_only_feedback_schema"></div>
 \centering
-\includegraphics{img/example.pdf}
+\includegraphics{example}
 \caption{Exchange Only Feedback Model}
+\label{fig:exchange_only_feedback_schema}
 \end{figure}
 
 Considering an economy where all other transaction categories have been eliminated, as
 indicated in figure 1.11, we can build a simple aggregate model as shown in figure 1.12.
 
 \begin{figure}
-% <div id="fig_exchange_only_aggregate_model"></div>
 \centering
-\includegraphics{img/example.pdf}
+\includegraphics{example}
 \caption{Exchange Only Aggregate Model}
+\label{fig:exchange_only_aggregate_model}
 \end{figure}
 
 In periods 1 and 3, the unemployment rate, disregarding frictional unemployment, is zero.
@@ -209,66 +219,67 @@ market equilibrium, i.e. that there is not excess aggregate suppl7y or excess ag
 now have a model which is the same as the 'simple model' we presented earlier.
 
 \begin{figure}
-%<div id="fig_equilibrium_aggregate_model"></div>
 \centering
-\includegraphics{img/example.pdf}
+\includegraphics{example}
 \caption{Equilibrium Aggregate Model}
+\label{fig:equilibrium_aggregate_model}
 \end{figure}
 
 \begin{figure}
-% <div id="fig_information_transmission"></div>
 \centering
-\includegraphics{img/example.pdf}
+\includegraphics{example}
 \caption{Information Transmission and Coding}
+\label{fig:information_transmission}
 \end{figure}
 
 \begin{figure}
-% <div id="fig_overbooking"></div>
 \centering
-\includegraphics{img/example.pdf}
+\includegraphics{example}
 \caption{Overbooking Model}
+\label{fig:overbooking}
 \end{figure}
 
 \begin{figure}
-% <div id="fig_aggregate_overbooking"></div>
 \centering
-\includegraphics{img/example.pdf}
+\includegraphics{example}
 \caption{Aggregate Model with Overbooking}
+\label{fig:aggregate_overbooking}
 \end{figure}
 
 \begin{figure}
-%<div id="fig_error_model"></div>
 \centering
-\includegraphics{img/example.pdf}
+\includegraphics{example}
 \caption{Error Model}
+\label{fig:error_model}
 \end{figure}
 
 The most important implication is that markets only equilibriate in aggregate along the thick black
-line shown in Figure 1.5, i.e. that market equilibriation an inflation rate greater than a certain
-positive value. Therefore our new problem is to design a currency which is controlled to maintain a
-state on the thick black line.
+line shown in Figure \ref{fig:error_model}, i.e. that market equilibriation an inflation rate
+greater than a certain positive value. Therefore our new problem is to design a currency which is
+controlled to maintain a state on the thick black line.
 
 The critical control that a monetary authority has over a currency is
 
 \begin{figure}
 \centering
-% <div id="ui_multi"></div>
-\includegraphics{img/example.pdf}
+\includegraphics{example}
 \caption{Unemployment and Inflation for Selected Countries}
+\label{fig:ui_multi}
 \end{figure}
 
-Figure 4 shows a relationship between 
-unemployment and inflation data for selected countries that we expect to be linear when growth rates
-are relatively constant.
+Figure \ref{fig:ui_multi} shows a relationship between unemployment and inflation data for selected
+countries that we expect to be linear when growth rates are relatively constant.
 
 Therefore our new problem is to design a currency which is controlled to maintain a
 state on the thick black line. The critical control that a monetary authority has over a currency is
-through the supply of money and hence though aggregate demand and the inflation rate. In Figure 3
-the left axis, inflation, is the control variable. The growth rate remains relatively exogenous.
+through the supply of money and hence though aggregate demand and the inflation rate. In Figure
+\ref{fig:error_model} the left axis, inflation, is the control variable. The growth
+rate remains relatively exogenous.
 
 To control aggregate demand we need to implement a feedback control loop with a set point above the
-he rate of inflation by a sufficient buffer (see Figure 3) to handle variations in the system. This
-is best done by determining a value of from past data and then responding to changes in $F$, the
+he rate of inflation by a sufficient buffer (see Figure \ref{fig:error_model}) to handle variations
+in the system. This is best done by determining a value of from past data and then responding to
+changes in $F$, the
 total amount of money transacted during a period of time, which can easily be measured for a digital
 currency, backed up by unemployment surveys. The money supply can be precisely determined by
 indexing all payments by a index set by the monetary authority. This is done by making the payment
@@ -304,11 +315,10 @@ transactions. This stable state, however, contradicts past records of exchange r
 this in the following paragraph.
 
 \begin{figure}
-% <p class="figure_title">Figure 1.19. Inflation Feedback</p>
-% <div id="ui_multi"></div>
 \centering
-\includegraphics{img/example.pdf}
+\includegraphics{example}
 \caption{Inflation Feedback}
+\label{fig:inflation_feedback}
 \end{figure}
 
 \subsection{Contract Transactions}
@@ -383,7 +393,7 @@ calculated from the sum of payments for exchange transactions over a given perio
 
 \begin{figure}
 \centering
-\includegraphics{img/example.pdf}
+\includegraphics{example}
 \caption{Control System Design Solution}
 \label{fig:control_solution}
 \end{figure}
