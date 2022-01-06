@@ -28,19 +28,66 @@ to a certain degree. One method is to use a closed system. Another method is to 
 sophisticated controller into the loop, such as a human, in combination with the mechanism. Examples
 are ...
 
-Adapting \ref{fig:feedback_schema} to the case of a person on a bicycle,
+A heater with a fixed output.
+
+A heater with a thermostat.
+
+Using a schema similar to \ref{fig:feedback_schema} we can represent the cyclist as,
 
 \begin{figure}
-\includegraphics[scale=0.28]{/02/bicycle_feedback_schema}
-\caption{Bicycle}
+\includegraphics[scale=0.48]{/02/bicycle_feedback_schema}
+\caption{Bicycle Feedback Schema}
 \label{fig:bicycle_feedback_schema}
 \end{figure}
 
+The 'reference signal' or 'set point' is the goal of the system, in this case most likely a
+desination and when they want to arrive. The controller takes the set point and the present
+conditions, i.e. where the cyclist is currently, the location of obstacles, if the road is heading
+uphill or downhill etc.  weather conditions are, how much time they have remaining and convert this
+into a control signal. Part of the control signal in this case is observable - the person's
+adjustments to the handle-bars, other signals are not observable such as decisions on how hard to
+pedal. The actuator in this case is the cyclists leg muscles, which convert those desicions, and use
+energy to convert them into pedal pressure. The cyclist then observes the situation again and reacts
+to the situation by feeding their sensory data back into the 'controller' and so on in a closed
+loop. In the case of the cyclist we depend on continuous inputs in a changing, often unpredictable
+environment to adjust behaviour - we require a closed loop system.
+
 \section{History of Control Systems} 
+
+\subsection{Huygens}
+
+\subsection{Watt}
+
+\subsection{James Clerk Maxwell}
+
+\subsection{The Wright Brothers}
+
+Prior to the Wright brother's first flight in December 1903, Orville and Wilbur Wright believed that
+the most fundamental problems they needed to solve were control problems. In September 1901 Wilbur
+Wright's first public presentation on the feasibility of heavier-than-air flight stated that ``When
+this one feature [control] has been worked out the age of flying machines will have arrived, for all
+other difficulties are of minor importance."\cite{wright1908}
+
+% TODO - this paragraph requires work.
+
+The general view prior to the Wright brothers was that aircraft required the mechanism to
+self-stabilize. [this was a problem because incorporating stability into the air-craft was at the
+cost of agility. Possibly because the Wright brothers were bicycle-shop owners, and were aware that
+bicycles are fundamentally unstable and require human intervention to stay upright, they understood
+that this control could be done by the pilot rather than the plane.
+
+\subsection{Elmer Sperry}
+
+Rather than having a human do all the controlling, we are also interested in automating the control
+system using a machine.
 
 \section{Positive Feedback}
 
 \section{Error Correction}
+
+\section{Isolation}
+
+\section{Stability}
 
 \section{The Internet}
 
