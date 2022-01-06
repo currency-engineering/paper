@@ -58,6 +58,8 @@ environment to adjust behaviour - we require a closed loop system.
 
 \subsection{Watt}
 
+PID controller
+
 \subsection{James Clerk Maxwell}
 
 \subsection{The Wright Brothers}
@@ -78,8 +80,30 @@ that this control could be done by the pilot rather than the plane.
 
 \subsection{Elmer Sperry}
 
-Rather than having a human do all the controlling, we are also interested in automating the control
-system using a machine.
+Elmer Sperry was the first to construct a PID controller. One notable characteristic of PID
+controllers is that despite much work in the design of more sophisticated controllers, PID
+controllers are by far the most widely used, demonstrating robustness to solve a broad range of
+control problems.
+
+Elmer Sperry is best known for his construction and application of gyroscopes following the
+invention of the first practical gyroscope by Hermann Anschütz-Kaempfe in 1904. One of Sperry's
+applications was the use of a gyroscope as a component in a control system to self-stabilize
+airplanes.
+
+[longer flights]
+ 
+Following on from these experiences, he worked with the U.S. Navy to use gyroscopes for stabilizing
+ships, and then also to build control systems as auto-pilots of ships. Because the control process
+involved in steering large ships with significant lags and so was relative slow and visible, he was
+able to observe that skilled helmsmen used a more nuanced 'algorithm' than just a proportional
+response, and that the helmsman with put the helm over in the opposite to the directions in which
+the ship was yawing a significantly in advance (a D response), and that helmsman worked the ship
+upwards in response to currents and prevailing wind (an I response). Sperry then incorporated these
+three responses (P, I and D) into his mechanical control mechanism which connected the gyroscope to
+the ships steering.
+
+In 1922 Nicolas Minorsky published a paper which encapsulated the P, I and D into an
+equation.\cite{minorsky1922}
 
 \section{Positive Feedback}
 
