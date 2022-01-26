@@ -1,7 +1,6 @@
 \chapter{Dynamic Systems and Control}
 
-% Layout
-% 
+\section{Introduction}
 
 (from introduction)
 
@@ -17,7 +16,18 @@ interesting case in point), i.e. that we should approach the analysis of currenc
 as an engineering problem, and in particular the engineering and control of
 dynamic systems."
 
-In this chapter we introduce the engineering and control of dynamic systems.
+In this chapter we introduce foundations for an engineering analysis of currency. Dynamic systems
+and control system engineering are a broad, over-arching engineering disciples relevant across
+virtually all more specialized disciplines. We require a good understanding of negative feedback,
+positive feedback, PID controllers, the effects of noise and errors on systems and design responses
+to handle noise and errors.
+
+We do not use an engineering approach for the analysis of the equilibriation process observed in
+markets. The only rule the we accept governs market behaviour is the lawx of supply and demand only
+at an aggregate level, as was so nicely described by David Hume. The only assumption we make about
+the law of supply and demand at an aggregate level is that the price level and quantities and goods
+and services adjust to the point where aggregate excess supply or aggregate excess demand tend to
+zero. We only accept this assumption to the extent that it can be empirically justified.
 
 \section{Negative Feedback}
 
@@ -52,17 +62,15 @@ to the situation by feeding their sensory data back into the 'controller' and so
 loop. In the case of the cyclist we depend on continuous inputs in a changing, often unpredictable
 environment to adjust behaviour - we require a closed loop system.
 
-\section{History of Control Systems} 
+\subsubsection{Huygens}
 
-\subsection{Huygens}
+\subsubsection{Watt}
 
-\subsection{Watt}
+\subsection{PID controller}
 
-PID controller
+\subsubsection{James Clerk Maxwell}
 
-\subsection{James Clerk Maxwell}
-
-\subsection{The Wright Brothers}
+\subsubsection{The Wright Brothers}
 
 Prior to the Wright brother's first flight in December 1903, Orville and Wilbur Wright believed that
 the most fundamental problems they needed to solve were control problems. In September 1901 Wilbur
@@ -78,7 +86,7 @@ cost of agility. Possibly because the Wright brothers were bicycle-shop owners, 
 bicycles are fundamentally unstable and require human intervention to stay upright, they understood
 that this control could be done by the pilot rather than the plane.
 
-\subsection{Elmer Sperry}
+\subsubsection{Elmer Sperry}
 
 Elmer Sperry was the first to construct a PID controller. One notable characteristic of PID
 controllers is that despite much work in the design of more sophisticated controllers, PID
@@ -114,5 +122,168 @@ equation.\cite{minorsky1922}
 \section{Stability}
 
 \section{The Internet}
+
+\subsubsection{Introduction to the Internet}
+
+Internet routing works extra-ordinarily well. Why is this?
+
+The English team.
+
+Baran
+
+- thinking about the network as a dynamic system
+- by reducing the granularity of the feedback (packets) rather than connections one can be more
+  responsive to changes in network condition.
+
+
+The two fundamental feedback problems are
+
+\begin{enumerate}
+    \item choosing a route
+    \item fill up that route
+\end{enumerate}
+
+
+One might expect that the choice of route is determined by feeding back to the routing control
+components in the system, information about round-trip times.
+
+Very interestingly, this isn't how choice of route is determined.
+
+In general, route choice is determined statically by the system administrators for each owned
+component of network.  
+
+This seems surprising on two points,
+
+\begin{enumerate}
+    \item If route choice is so static how can the system respond to change?
+    \item Routes remain very dynamic. If we use 'traceroute' on an internet request, the route is
+        always changing.
+\end{enumerate}
+
+The important point is that computer networks are extremely bursty and unpredictable. It is the
+nature of computer network traffic that it occurs in bursts. This introduces large amounts of noise
+into the feedback process. 
+
+The way to handle this unpredictability is to increase the time-frame response. By aggregating data
+we can smooth out the response. In other words, by making the feedback slower we can increase its
+effectiveness.   
+
+The companies that own the network are motivated to optimizing the this feedback process. So
+economics comes into the loop.
+
+One draw-back of economic feedback across the network is that system administrators optimize the
+network for their own customers.
+
+How does this guarantee that the network is also optimized for temporary non-paying users of that
+network?
+
+
+
+There are a couple of important economic lessons/analogies here:
+
+1. aggregating    
+2. feedback doesn't necessarily have to be built in from the smallest granularity upwards,
+   system-administration of internet areas is sufficient.
+
+It may well be (though not guaranteed) that the feedback in aggregated systems (such as the whole
+economy) can work well, even if the components are clumpy (as in administrative areas in the
+internet). [reword]
+
+It is not a-priory guaranteed that such systems are stable or unstable. Ultimately, the stability of
+a system can only be guaranteed through a process of redesign and testing (i.e. a scientific
+process).
+
+This is also experienced with the internet - we can see that iterative improvement process at all
+levels, and redesign responses to failure.
+
+[history of fixing the problems of the internet]
+
+\subsection{Details of the Internet}
+
+
+\subsubsection{Packet Switching}
+
+\subsubsection{Baran}
+\subsubsection{Davies}
+
+\subsubsection{Routing Algorithms}
+
+Two feedbacks - 
+
+\subsubsection{TCP - Route Filling}
+
+\subsubsection{Packet Loss}
+
+How does TCP protocol respond to packet loss?
+
+\subsubsection{The Problem of Burstiness} 
+
+subsection{Fixing Problems}
+
+\subsubsection{Congestion Collapse}
+
+
+
+Nagle \cite{nagle1984}
+
+\begin{quote}
+Congestion control is a recognized problem in complex networks. We have discovered that the
+Department of Defense's Internet Protocl (IP), a pure datagram protocol, and Transmission Control
+Protocol (TCP), a transport later protocol, when used together, are subject to unusual congestion
+problems cause by interactions between the transport and datagram layers. In particular, IP gateways
+are vulnerable to a phenomenon we call "congestion collapse", especially when such gateways connect
+networks of widely different bandwidth...
+
+Should the roundtrip time exceed the maximum retransmission interval for any host that host will
+    begin to introduce more and more copies of the same datagrams into the ne t. The network is now
+    in serious trouble. Eventually all available buffers in the switching nodes will be full and
+    packets must be dropped. The roundtrip time for packets that are delivered is now at its
+    maximum. Hosts are sending each packet several time, and eventually some copy of each packet
+    arrives at its destination. The is congestion collapse.
+
+The condition is stable.Once the saturation point has been reached, if th4 algorithm for selecting
+    packets to be dropped is fair, the network will continue to operate in a degraded condition.
+\end{quote}
+
+To prevent this situation flow-control, congestion control, and congestion avoidance mechanisms were
+introduced into the TCP protocol.
+
+The 'wrong behaviour' can be described as a positive feedback.
+
+
+We can't predict everything when we design a system, as the system evolves.
+
+\begin{quote}
+Ford Aerospace and Communications Corporation, and its parent company, Ford Motor Company, operate
+    the only private IP/TCP long-haul network in existence today. This network connects four
+    facilities (one in Michigan, two in California, and on in England) some with extensive local
+    networks.... Bandwidth of links in this network varies widely, from 1200 to 10,000,000 bits per
+    second. ... Because of our pure datagram orientation, heavy loading, and wide variation in
+    bandwith, we have had to solve problems that the ARPANET / MILNET communicty is just beginning
+    to recognize.
+\end{quote}
+
+\subsubsection{October 1986 Congestion Collapse}
+
+Jacobson \cite{jocobson1988} discusses a principle to prevent congestion collapse
+
+\begin{quote}
+    The flow on a TCP connection should obey a 'conservation of packets' principle. ... By
+    'conservation of packets' we mean that for a connection 'in equilibrium', i.e., running stably
+    with a full window of data in transit, the packet flow is what a physicist would call
+    'conservative': A new packet isn't put into the network until an old packet leaves. The physics
+    of flow predicts that systems with this property should be robust in the face of congestion.
+    Observation of the Internet suggests that it was not paricularly robust. Why the discrepancy?
+
+    There are only three ways for packet conservation to fail:
+    1. The connection doesn't get to equilibrium, or
+    2. A sender inject a new packet before an old packet has exited, or
+    3. The equilibrium can't be reached because of resource limits along the path.
+\end{quote}
+
+This isn't the complete picture, because if time-outs come into play, then we get a positive
+feedback.
+
+
 
 
