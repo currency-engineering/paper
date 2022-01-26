@@ -125,7 +125,83 @@ equation.\cite{minorsky1922}
 
 \subsubsection{Introduction to the Internet}
 
-Internet routing works extra-ordinarily well. Why is this?
+Our goal is to examine the different negative and positive feedback systems in the internet. How
+important are these feedbacks to the design of the internet? What are the constraints on the design
+of these feedbacks? Identify which designs have successfully solves problems, and which have not.
+
+In general feedback design is embedded in algorithms and not so explicit, but are central to network
+design from the beginning. 
+
+\subsection{early approach to network design}
+
+Did early approaches to network design involve thinking about feedback systems.
+
+First identify the different feedback problems. Historical analysis gives a good picture about which
+problems were solved, which were not.
+
+\subsection{Packet Switching}
+
+The most notable difference between digital networks and the precursor to digital networks - the
+telephone network - was the notion of packet switching.
+
+\subsubsection{Baran}
+
+In the mid 1960s Paul Baran was working on the problem of fault-tolerant networks\cite{baran1964intro}.
+
+Analog telephone systems work by setting up a connection between two telephones. This connection
+takes complete ownership of the physical connection, the wire. Baran proposed to share the physical
+wire between many connections. Time division multiplexing had been used since the late 19th century
+to share a single wire to send multiple telegraph messages synchronously. This was called time
+division multiplexing. The idea was to share the wire by allocating divisions of time for each
+message. Baran's idea was rather than to multiplex by time, to multiplex by a standardized message
+block, later termed a 'packet'.
+
+\begin{quote}
+Time division multiplexing appears so natural to data transmission that we might wish to consider an
+alternative approach -- a standardized message block as a network interface standard.\cite{baran1964intro}
+\end{quote}
+
+The reasons were
+
+\subsubsection{Efficiency}
+
+telephone systems multiplex, i.e. chop up and share out communication by pre-allocating transmission
+bandwidth a connect (or telephone call).
+
+Data transmission comes in short bursts, so the complete physical connection is 'blocked' by the
+empty parts in a transmission.
+
+By reducing the granularity of the chopping-up into small packets, one could more efficiently share
+out the resource, by filling up the blank spaces by some other communication.
+
+\subsubsection{Dynamics}
+
+A telephone call fixes the relationship between transmitted information and the network. By
+packaging up information and assigning each package a destination address, a degree of freedom is
+introduced between the transmitted information and the network. This means that information can be
+rerouted, i.e. respond to network conditions, directly attacking the problem of network fault
+tolerance.
+
+We have introduced a negative feedback here, i.e. a response to failure in the network, so as to
+maintain a stable condition i.e. the success rate of transmissions. We'll look at how this is
+implemented in section A.
+
+\subsubsection{Davies}
+
+
+
+\subsection{routing - response to unavailability}
+
+Internet routing works extra-ordinarily well.
+
+Baran
+
+\subsection{routing - response to looping}
+
+\subsection{TCP and link utilization}
+
+\subsection{TCP and congestion}
+
 
 The English team.
 
