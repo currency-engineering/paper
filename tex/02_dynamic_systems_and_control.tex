@@ -29,7 +29,16 @@ the law of supply and demand at an aggregate level is that the price level and q
 and services adjust to the point where aggregate excess supply or aggregate excess demand tend to
 zero. We only accept this assumption to the extent that it can be empirically justified.
 
+% Chapter:          Dynamic Systems and Control
+% Secion:           Negative Feedback
 \section{Negative Feedback}
+
+Negative feedback is a process of repetitively measuring by how much a system deviates from a
+desired value, and feeding that error back into the system in proportion to the degree of the error. 
+
+
+
+
 
 We are looking for a way that we can keep the conditions of the system in some desirable state.
 Examples are ... If the system is predictable can use an open system. Many systems, however are not
@@ -113,15 +122,344 @@ the ships steering.
 In 1922 Nicolas Minorsky published a paper which encapsulated the P, I and D into an
 equation.\cite{minorsky1922}
 
+% chapter:          Dynamic Systems
+% section:          Positive Feedback
 \section{Positive Feedback}
 
+% chapter:          Dynamic Systems
+% section:          Error Correction
 \section{Error Correction}
 
+% chapter:          Dynamic Systems
+% section:          Isolation 
 \section{Isolation}
 
+% chapter:          Dynamic Systems
+% section:          Stability
 \section{Stability}
 
-\section{The Internet}
+% chapter:          Dynamic Systems
+% section:          Internet
+\section{Internet}
+
+% chapter:          Dynamic Systems
+% section:          Internet
+% subsection:       Introduction
+\subsection{Internet::Introduction}
+
+% chapter:          Dynamic Systems
+% section:          Internet
+% subsection:       Introduction
+% subsubsection:    Some Abstractions - Multiplexing
+\subsubsection{Some Abstractions - Multiplexing}
+
+% chapter:          Dynamic Systems
+% section:          Internet
+% subsection:       Introduction
+% subsubsection:    Packet Switching 
+\subsubsection{Packet Switching}
+
+The most notable difference between digital networks and the precursor to digital networks - the
+telephone network - was the notion of packet switching.
+
+% Baran
+
+In the mid 1960s Paul Baran was working on the problem of fault-tolerant networks\cite{baran1964intro}.
+
+\begin{quote}
+Packet switching technology was not really an invention, but a reapplication of the basic
+    dynamic-allocation techniques used for over a century by the mail, telegraph, and torn paper
+    tape switching systems. \cite{roberts1978}
+\end{quote}
+
+% Pre-allocation
+
+radio, telephony
+
+Analog telephone systems work by setting up a connection between two telephones. This connection
+takes complete ownership of the physical connection, the wire. Baran proposed to share the physical
+wire between many connections. Time division multiplexing had been used since the late 19th century
+to share a single wire to send multiple telegraph messages synchronously. This was called time
+division multiplexing. The idea was to share the wire by allocating divisions of time for each
+message. Baran's idea was rather than to multiplex by time, to multiplex by a standardized message
+block, later termed a 'packet'.
+
+% Dynamic allocation
+
+telegraph and mail systems
+
+\begin{quote}
+Time division multiplexing appears so natural to data transmission that we might wish to consider an
+alternative approach -- a standardized message block as a network interface standard.\cite{baran1964intro}
+\end{quote}
+
+The reasons were
+
+% Efficiency
+
+telephone systems multiplex, i.e. chop up and share out communication by pre-allocating transmission
+bandwidth a connect (or telephone call). Data transmission comes in short bursts, so the complete
+physical connection is 'blocked' by the empty parts in a transmission, and so roughly 90 percent of
+capacity was wasted. We can see why telegraphy was so much cheaper than voice communication. By
+reducing the granularity of the chopping-up into small packets, one could more efficiently share out
+the resource, by filling up the blank spaces by some other communication.
+
+% Reliability
+
+% Dynamics
+
+A telephone call fixes the relationship between transmitted information and the network. By
+packaging up information and assigning each package a destination address, a degree of freedom is
+introduced between the transmitted information and the network. This means that information can be
+rerouted, i.e. respond to network conditions, directly attacking the problem of network fault
+tolerance. We have introduced a negative feedback here, i.e. a response to failure in the network,
+so as to maintain a stable condition i.e. the success rate of transmissions. We'll look at how this
+is implemented in section A.
+
+Such dynamic systems require feedback for regulation.
+
+% chapter:          Dynamic Systems
+% section:          Internet
+% subsection:       Introduction
+% subsubsection:    Some Abstractions - Hiding 
+\subsubsection{Some Abstractions - Hiding}
+
+% TODO: Need a 'hindsight' qualification.
+
+% chapter:          Dynamic Systems
+% section:          Internet
+% subsection:       Introduction
+% subsubsection:    Some Constraints - Distributed Systems 
+\subsubsection{Some Constraints - Distributed Systems}
+
+\subsubsection{Some Constraints - Burstiness}
+
+\subsubsection{Some Constraints - Heterogenous Networks and Hardware}
+
+In the early 1970s a protocol for joining together many networks. The question is why would you
+join together networks, each with their own hardware and protocols? Why not select a uniform
+protocol that is universal across all networks?
+
+\begin{quote}
+    Even though many different and complex problems must be solved in the design of an individual
+    packet switching network, these problems are manifestly compounded when dissimilar networks are
+    interconnected. Issues arise which may have no direct counterpart in an individual network and
+    which strongly influence the way in which internetwork communication can take place.
+    \cite{cerf1974}
+\end{quote}
+
+% TODO: Answer this question
+
+% This section should probably be shifted to a later section.
+
+The main problem of building a network of networks, i.e. the internet was to figure out a way for
+many different kinds of networks to interoperate. In the foundational paper outlining how to
+approach this problem\cite{cerf1974}, Cerf and Kahn utilize the hiding abstraction as much as
+possible, to reduce the complexity of interactions between the different networks. In the abstract
+they enumerate the functionality to be passed off to individual networks, 
+
+\begin{quote}
+The protocol provides for variation in individual network packet sizes, transmission failures,
+sequencing, flow control, end-to-end error checking, and the creation and destruction of logical
+process-to-process connections.
+\end{quote}
+
+This could be summarized as passing off dynamic feedback to the individual networks, and specifying
+the minimum static properties that all networks must share. 
+
+
+% Re-check this quote - it might be out of context.
+\begin{quote}
+    [Systems] such as real-time traffic that can adapt its sending rate to reduce loss and/or delay
+    [are] most effective when the adaption occurs on timescales of a single Round-Trip Time (RTT) or
+    a small number of RTTs, for elastic traffic.\cite{rfc7567}, page 6.
+\end{quote}
+
+% chapter:          Dynamics Systems
+% section:          Internet
+% subsection:       TCP/IP
+\subsection{TCP/IP}
+
+% TODO: Description of IP
+
+% TODO: Description of TCP
+
+% TODO: Historical process of separating out TCP and IP. (see Roberts)
+
+% TODO: We want to show that IP is the plant and that TCP is feedback.
+% 
+
+% chapter:          Dynamic Systems
+% section:          Internet
+% subsection:       TCP/IP
+% subsubsection:    Control System Components
+\subsubsection{Control System Components}
+
+\begin{figure}
+\includegraphics[scale=0.28]{/01/feedback_schema}
+\caption{Control System Schema}
+\label{fig:feedback_schema}
+\end{figure}
+
+% chapter:          Dynamic Systems
+% section:          Internet
+% subsection:       Congestion
+\subsection{Congestion}
+
+% chapter:          Dynamic Systems
+% section:          Internet
+% subsection:       Congestion
+% subsubsection:    TCP Feedback schema 
+\subsubsection{TCP Feedback Schema} 
+
+What should the set-point be?
+
+\begin{quote}
+The naive assumption might be that there is a simple trade-off between delay and throughput, and
+that the recommendation that queues be maintained in a "non-full" state essentially translates
+to a recommendation that low end-to-end delay is more important than high throughput. However,
+this does not take into account the critical role that packet bursts play in Internet
+performance. For example, even though TCP constrains the congenstion window of a flow, packets
+often arrive at network devices in bursts [Leland94]. If the queue is full or almost full, an
+arriving burst will cause multiple packets to be dropped from the same flow. Bursts of loss can
+result in a gloabl synchronization of flows throttling back, followed by a sustained period of
+lowered link utilixzation, reducing overall throughput. \cite{rfc7567} page 8.
+\end{quote}
+
+What information should be transmitted?
+
+\begin{quote}
+By means of simulating TCP/IP network operations we are able to examine in detail the causes of
+traffic oscillation in a simple network setting. Our analysis shows that users' control actions
+are highly synchronized by the network congestion signaling and that providing users only a
+    binary network state can lead to repeated oscillations\cite{zhang1990}.
+\end{quote}
+
+
+% TODO: Check references [Leland94], [Flo94], [Zha90].
+
+% chapter:          Dynamic Systems
+% section:          Internet
+% subsection:       Congestion
+% subsubsection:    The Actual Design
+\subsection{The Actual Design}
+
+% TODO: Place this image in the correct place
+
+\begin{figure}
+\includegraphics[scale=0.48]{/02/bandwidth_transition}
+\caption{Packets reaching bandwith transition}
+\label{fig:bandwidth_transition}
+\end{figure}
+
+
+% ACK clocking is pseudo-mechanical. When this system was designed the cost (monetary and in time)
+% of computer processing was large. The IMP (the interface 'card') had 12K of memory and a cost of
+% hundreds of thousands of dollars. The ingenuity of mechanical feedback stabilization mechanism is
+% remarkable, and given the costs at the time, made sense. In general though, mechanical feedback
+% processes are highly inflexible (hence the ingenuity required) compared to a simple PID
+% controller.   
+
+\subsubsection{History of "Tail-Drop" Queueing}
+
+\begin{quote}
+The traditional technique for managing the queue length in a network device is to set a maximum
+    length (in terms of packets) for each queue, accept packets for the queue until the maximum
+    length is reached, then reject (drop) subsequent income packets until the queue decreases
+    because a packet from the queu has been transmitted. This technique is known as "tail drop",
+    since the packet that arrived most recently (i.e. the one on the tail of the queue) is dropped
+    when the queue is full. This method has served the Internet well for years, but it has four
+    imporant drawbacks. \cite{rfc7567} p. 8.
+\end{quote}
+
+The first being,
+
+\begin{quote}
+The "tail drop" discipline allows queues to maintain a full (or almost full) status for long periods
+of time, since tail drop signals congestion (via a packet drop) only when the queue has become
+full. It is important to reduce the steady-state queue size, and this is perhaps the most
+important goal for queue management. \cite{rfc7567} p. 8.
+\end{quote}
+
+% TODO: This is fifty-years!! after this algorithm was first written.
+% TODO: When did the term "tail drop" appear?
+% TODO: Trace back these RFCs.
+
+Jacobson \cite{jacobson1988} discusses a principle to prevent congestion collapse
+
+\begin{quote}
+    The flow on a TCP connection should obey a 'conservation of packets' principle. ... By
+    'conservation of packets' we mean that for a connection 'in equilibrium', i.e., running stably
+    with a full window of data in transit, the packet flow is what a physicist would call
+    'conservative': A new packet isn't put into the network until an old packet leaves. The physics
+    of flow predicts that systems with this property should be robust in the face of congestion.
+    Observation of the Internet suggests that it was not paricularly robust. Why the discrepancy?
+
+    There are only three ways for packet conservation to fail:
+    1. The connection doesn't get to equilibrium, or
+    2. A sender inject a new packet before an old packet has exited, or
+    3. The equilibrium can't be reached because of resource limits along the path.
+\end{quote}
+
+% What the actual design looked like
+
+% The problem that occurred
+
+% TODO: Describe the actual events that occurred.
+
+% chapter:          Dynamic Systems
+% section:          Internet
+% subsection:       Congestion
+% subsubsection:    Congestion Events
+\subsubsection{Congestion Events}
+
+Nagle \cite{rfc896}
+
+\begin{quote}
+We have discovered that the Department of Defense's Internet Protocl (IP), a pure datagram protocol,
+and Transmission Control Protocol (TCP), a transport later protocol, when used together, are
+subject to unusual congestion problems cause by interactions between the transport and datagram
+layers. In particular, IP gateways are vulnerable to a phenomenon we call "congestion collapse",
+especially when such gateways connect networks of widely different bandwidth...
+
+Should the roundtrip time exceed the maximum retransmission interval for any host that host will
+begin to introduce more and more copies of the same datagrams into the ne t. The network is now
+in serious trouble. Eventually all available buffers in the switching nodes will be full and
+packets must be dropped. The roundtrip time for packets that are delivered is now at its
+maximum. Hosts are sending each packet several time, and eventually some copy of each packet
+arrives at its destination. The is congestion collapse.
+
+The condition is stable. Once the saturation point has been reached, if th4 algorithm for selecting
+packets to be dropped is fair, the network will continue to operate in a degraded condition.
+\end{quote}
+
+% Thinking about the problem as a positive feedback
+
+% chapter:          Dynamic Systems
+% section:          Internet
+% subsection:       Congestion
+% subsubsection:    Positive Feedback 
+\subsubsection{Positive Feedback}
+
+
+% chapter:          Dynamic Systems
+% section:          Internet
+% subsection:       Routing
+\subsection{Routing}
+
+\subsubsection{IP vs TCP}
+
+From a control system point of view, IP and TCP are separate. IP is fundamentally static. Packets
+are set onto the network, and no measurement or response is taken. TCP is a dynamic process -
+sending packets onto the network, collecting data from the network, and using that data to respond
+to failures.
+
+European method was IP, US approach was a combination of IP and TCP. In around 1978, the US team
+separated out the (clearly different functionality from a control system point of view) IP and TCP.
+
+\subsubsection{Dropping Packets}
+
+Using dropped packets as a error measurement is problematic.
 
 \subsubsection{Introduction to the Internet}
 
@@ -139,56 +477,67 @@ Did early approaches to network design involve thinking about feedback systems.
 First identify the different feedback problems. Historical analysis gives a good picture about which
 problems were solved, which were not.
 
-\subsection{Packet Switching}
 
-The most notable difference between digital networks and the precursor to digital networks - the
-telephone network - was the notion of packet switching.
+\subsubsection{Reliability}
 
-\subsubsection{Baran}
+\subsubsection{Cost}
 
-In the mid 1960s Paul Baran was working on the problem of fault-tolerant networks\cite{baran1964intro}.
+Telephone networks have serial connections, meaning that failure in any link results in failure of
+the connection. In consequence every link has to be very high reliability and therefore costly.
+Packet switching networks could work across cheap wires and use software design to solve reliability
+problems.
 
-Analog telephone systems work by setting up a connection between two telephones. This connection
-takes complete ownership of the physical connection, the wire. Baran proposed to share the physical
-wire between many connections. Time division multiplexing had been used since the late 19th century
-to share a single wire to send multiple telegraph messages synchronously. This was called time
-division multiplexing. The idea was to share the wire by allocating divisions of time for each
-message. Baran's idea was rather than to multiplex by time, to multiplex by a standardized message
-block, later termed a 'packet'.
+\subsubsection{Downsides}
+
+The downsides of packet switching is the requirement for computing power and memory buffers and the
+ends of network links.
+
+\subsubsection{Social Resistance}
+
+Roberts\cite{roberts1978} later reflected on the development of packet switching,
 
 \begin{quote}
-Time division multiplexing appears so natural to data transmission that we might wish to consider an
-alternative approach -- a standardized message block as a network interface standard.\cite{baran1964intro}
+The very fact that no technological breakthrough was required to implement packet switching was
+another factor weighing against its acceptance by the engineering community. What was required was a
+total reevaluation of the performance and economics of dynamic-allocation systems, and their
+application to an entirely different task. Thus, it remained for outsiders to the communications
+industry, computer professionals, to develop packet switching in response to a problem for which the
+    needed a better answer: communicating data to and from computers.
 \end{quote}
-
-The reasons were
-
-\subsubsection{Efficiency}
-
-telephone systems multiplex, i.e. chop up and share out communication by pre-allocating transmission
-bandwidth a connect (or telephone call).
-
-Data transmission comes in short bursts, so the complete physical connection is 'blocked' by the
-empty parts in a transmission.
-
-By reducing the granularity of the chopping-up into small packets, one could more efficiently share
-out the resource, by filling up the blank spaces by some other communication.
-
-\subsubsection{Dynamics}
-
-A telephone call fixes the relationship between transmitted information and the network. By
-packaging up information and assigning each package a destination address, a degree of freedom is
-introduced between the transmitted information and the network. This means that information can be
-rerouted, i.e. respond to network conditions, directly attacking the problem of network fault
-tolerance.
-
-We have introduced a negative feedback here, i.e. a response to failure in the network, so as to
-maintain a stable condition i.e. the success rate of transmissions. We'll look at how this is
-implemented in section A.
 
 \subsubsection{Davies}
 
 
+
+
+\subsection{Klein}
+
+To regulate dynamic state, timely and accurate measurement of the right variables are required, to
+determine the error that is to be fed back into the system.
+
+Kleinrock descibes some difficulties in measurement\cite{kleinrock1978},
+
+\begin{quote}
+    [The user] must accept probabilistic statements regarding throughput, delay and reliability (and
+    alas, sometimes even cost). Moreover the quantities so prescribed can seldom be measured in a
+    straightforward fashion.
+\end{quote}
+
+\begin{quote}
+    The astute reader will observe that the resource sharing problem stated above sounds very much
+    like the problem faced in the design of time sharing systems. Surely, with time sharing, we are
+    faced with the problem of sharing resources among asynchronous processes which behave in a
+    bursty fashion. The major difference between the two problems, however, is that our problem
+    exists in a \emph{geographically distributed} environment which requires expensive
+    communications and coordination functions.
+\end{quote}
+
+\begin{quote}
+    Furthermore, the control of these processes in the time-sharing environment can be very tightly
+    coupled if desired or left loosely coupled due to the difficulty of tightening the control
+    between them (indeed, the inherent delay due to the finite speed of light is a fundamental
+    limitation on the tight coupling of remote processes.
+\end{quote}
 
 \subsection{routing - response to unavailability}
 
@@ -300,26 +649,6 @@ subsection{Fixing Problems}
 
 
 
-Nagle \cite{nagle1984}
-
-\begin{quote}
-Congestion control is a recognized problem in complex networks. We have discovered that the
-Department of Defense's Internet Protocl (IP), a pure datagram protocol, and Transmission Control
-Protocol (TCP), a transport later protocol, when used together, are subject to unusual congestion
-problems cause by interactions between the transport and datagram layers. In particular, IP gateways
-are vulnerable to a phenomenon we call "congestion collapse", especially when such gateways connect
-networks of widely different bandwidth...
-
-Should the roundtrip time exceed the maximum retransmission interval for any host that host will
-    begin to introduce more and more copies of the same datagrams into the ne t. The network is now
-    in serious trouble. Eventually all available buffers in the switching nodes will be full and
-    packets must be dropped. The roundtrip time for packets that are delivered is now at its
-    maximum. Hosts are sending each packet several time, and eventually some copy of each packet
-    arrives at its destination. The is congestion collapse.
-
-The condition is stable.Once the saturation point has been reached, if th4 algorithm for selecting
-    packets to be dropped is fair, the network will continue to operate in a degraded condition.
-\end{quote}
 
 To prevent this situation flow-control, congestion control, and congestion avoidance mechanisms were
 introduced into the TCP protocol.
@@ -341,21 +670,6 @@ Ford Aerospace and Communications Corporation, and its parent company, Ford Moto
 
 \subsubsection{October 1986 Congestion Collapse}
 
-Jacobson \cite{jocobson1988} discusses a principle to prevent congestion collapse
-
-\begin{quote}
-    The flow on a TCP connection should obey a 'conservation of packets' principle. ... By
-    'conservation of packets' we mean that for a connection 'in equilibrium', i.e., running stably
-    with a full window of data in transit, the packet flow is what a physicist would call
-    'conservative': A new packet isn't put into the network until an old packet leaves. The physics
-    of flow predicts that systems with this property should be robust in the face of congestion.
-    Observation of the Internet suggests that it was not paricularly robust. Why the discrepancy?
-
-    There are only three ways for packet conservation to fail:
-    1. The connection doesn't get to equilibrium, or
-    2. A sender inject a new packet before an old packet has exited, or
-    3. The equilibrium can't be reached because of resource limits along the path.
-\end{quote}
 
 This isn't the complete picture, because if time-outs come into play, then we get a positive
 feedback.

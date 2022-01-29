@@ -35,7 +35,7 @@ A simple model that aggregates equilibria in each market implies an equilibrium 
 This model suggests macro-economic conditions as shown in Figure
 \ref{fig:supply_and_demand_prediction}.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics{example}
 \caption{Supply and Demand Model Prediction}
@@ -45,14 +45,14 @@ This model suggests macro-economic conditions as shown in Figure
 However, contrary to Figure \ref{fig:supply_and_demand_prediction} which implies full-employment
 Figure \ref{fig:ui_all_data} shows a vastly differing results.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics{example}
 \caption{Inflation Rate vs. Unemployment Data}
 \label{fig:ui_all_data}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics{example}
 \caption{Unemployment vs. Inflation Rate}
@@ -103,10 +103,19 @@ e) Understand as much as possible ways to prevent internal or external interacti
 
 \subsection{Destructuring and Negative Feedback}
 
-\begin{figure}
+\begin{figure}[h]
 \includegraphics[scale=0.28]{/01/feedback_schema}
-\caption{Control System Schema}
+\caption{Control System Schema with Actuator}
 \label{fig:feedback_schema}
+\end{figure}
+
+In systems that don't require an additional source of energy to control the system, the actuator can
+be removed from the feedback schema,
+
+\begin{figure}[h]
+\includegraphics[scale=0.28]{/01/feedback_schema_no_actuator}
+\caption{Control System Schema}
+\label{fig:feedback_schema_no_actuator}
 \end{figure}
 
 A simple example of a control system is a thermostat which adjusts the heating of a room. Some
@@ -118,7 +127,7 @@ correct for errors, noise and/or energy disipation in the plant and the the mini
 control variables is determined by the number of variables that the control system seeks to control.
 A control system for the economy looks like Figure \ref{fig:economic_feedback_schema}.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.28]{/01/economic_feedback_schema}
 \caption{Control System Schema for an Economy}
@@ -134,7 +143,7 @@ classes of components that require control and interact with the other classes.
 
 \subsubsection{Control Problem}
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics{example}
 \caption{Control Problem}
@@ -152,28 +161,28 @@ multiple input multiple output. We therefore take a systematic approach to this 
 destructuring each transaction class and examining the way it interacts with other transactions
 classes, step by step.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.28]{/01/exchange_transactions}
 \caption{Exchange Transactions}
 \label{fig:exchange_transactions}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics{example}
 \caption{Time Transactions}
 \label{fig:time_transactions}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.28]{/01/contract_transactions}
 \caption{Contract Transactions}
 \label{fig:contract_transactions}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.28]{/01/external_transactions}
 \caption{External Transactions}
@@ -182,7 +191,7 @@ classes, step by step.
 
 \section{Error Correction}
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.28]{/01/exchange_only_feedback_schema}
 \caption{Exchange Only Feedback Model}
@@ -192,7 +201,7 @@ classes, step by step.
 Considering an economy where all other transaction categories have been eliminated, as
 indicated in figure 1.11, we can build a simple aggregate model as shown in figure 1.12.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.28]{/01/exchange_only_aggregate_model}
 \caption{Exchange Only Aggregate Model}
@@ -207,35 +216,35 @@ deman, that in each time period, the aggregate of prices \(p_i\) and quantities 
 market equilibrium, i.e. that there is not excess aggregate supply or excess aggregate demand. We
 now have a model which is the same as the 'simple model' we presented earlier.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics{example}
 \caption{Equilibrium Aggregate Model}
 \label{fig:equilibrium_aggregate_model}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.28]{/01/information_transmission}
 \caption{Information Transmission and Coding}
 \label{fig:information_transmission}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics{example}
 \caption{Overbooking Model}
 \label{fig:overbooking}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics{example}
 \caption{Aggregate Model with Overbooking}
 \label{fig:aggregate_overbooking}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.28]{/01/error_model}
 \caption{Error Model}
@@ -249,7 +258,7 @@ controlled to maintain a state on the thick black line.
 
 The critical control that a monetary authority has over a currency is
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics{example}
 \caption{Unemployment and Inflation for Selected Countries}
@@ -303,7 +312,7 @@ equilibrium, interactions between two currencies, become roughly equivalent to e
 transactions. This stable state, however, contradicts past records of exchange rates. We deal with
 this in the following paragraph.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics{example}
 \caption{Inflation Feedback}
@@ -380,7 +389,7 @@ of an account is hidden, and account users will see increases in their account p
 closly in line with the inflation rate. The exchange index is the control variable and is generally
 calculated from the sum of payments for exchange transactions over a given period.  
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics{example}
 \includegraphics[scale=0.28]{/01/control_solution}
