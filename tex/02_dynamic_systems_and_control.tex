@@ -53,7 +53,7 @@ A heater with a thermostat.
 
 Using a schema similar to \ref{fig:feedback_schema} we can represent the cyclist as,
 
-\begin{figure}
+\begin{figure}[H]
 \includegraphics[scale=0.48]{/02/bicycle_feedback_schema}
 \caption{Bicycle Feedback Schema}
 \label{fig:bicycle_feedback_schema}
@@ -144,20 +144,8 @@ equation.\cite{minorsky1922}
 
 % chapter:          Dynamic Systems
 % section:          Internet
-% subsection:       Introduction
-\subsection{Internet::Introduction}
-
-% chapter:          Dynamic Systems
-% section:          Internet
-% subsection:       Introduction
-% subsubsection:    Some Abstractions - Multiplexing
-\subsubsection{Some Abstractions - Multiplexing}
-
-% chapter:          Dynamic Systems
-% section:          Internet
-% subsection:       Introduction
-% subsubsection:    Packet Switching 
-\subsubsection{Packet Switching}
+% subsection:       The Network 
+\subsection{The Network}
 
 The most notable difference between digital networks and the precursor to digital networks - the
 telephone network - was the notion of packet switching.
@@ -280,6 +268,39 @@ the minimum static properties that all networks must share.
 % subsection:       TCP/IP
 \subsection{TCP/IP}
 
+
+% TODO: more details about the actual networks
+% TODO: Arpanet used a feed-back form of communication
+% TODO: in particular that Cyclades used a feed-forward form of communication
+
+By the early 1970s many large-scale computer networks were being built. People wanted to join the
+networks together. Networks were being joined together on an ad-hoc basis, but it became clear that
+a structured approach would be better. The problem was that each network required special treatment.
+In 1973, Cerf and Kahn \cite{cerf1974} descibed a more structure way to join networks together, by
+applying the hiding abstraction at a network level. Cerf and Kahn described the minimum set of
+requirements that all networks must share, and designed a network protocol which   
+
+This was both a practical requirement in joining many heterogenous networks, but also a means of
+creating resiliance in the network by reducing dependencies across networks to the very minimum, and
+to encourage innovation outside the minimal core common protocol. This was later termed the
+hourglass mode.
+
+Cyclades etc. was a feedforward system. Cerf and Kahn proposed a system which was dependent only on
+feedforward communication as a common protocol, but on which feedback systems could be layered on.
+
+By specifying the minimal core, people could design their own physical networks with its own special
+protocols and 'plug' it into the common protocol. Likewise, people could create their own feedback
+protocols specific to required applications.
+
+Cerf and Kahn also presented the requirements of a feedback network that was layered on top of IP. 
+
+Figure ... shows the layering system. 
+
+
+TODO: One of the constraints of this system was the limitations it placed on the TCP.
+
+
+
 % TODO: Description of IP
 
 % TODO: Description of TCP
@@ -289,13 +310,19 @@ the minimum static properties that all networks must share.
 % TODO: We want to show that IP is the plant and that TCP is feedback.
 % 
 
+\begin{figure}[H]
+\includegraphics[scale=0.68]{/02/network_schema}
+\caption{Network Schema}
+\label{fig:network_schema}
+\end{figure}
+
 % chapter:          Dynamic Systems
 % section:          Internet
 % subsection:       TCP/IP
 % subsubsection:    Control System Components
 \subsubsection{Control System Components}
 
-\begin{figure}
+\begin{figure}[H]
 \includegraphics[scale=0.28]{/01/feedback_schema}
 \caption{Control System Schema}
 \label{fig:feedback_schema}
@@ -346,7 +373,7 @@ are highly synchronized by the network congestion signaling and that providing u
 
 % TODO: Place this image in the correct place
 
-\begin{figure}
+\begin{figure}[H]
 \includegraphics[scale=0.48]{/02/bandwidth_transition}
 \caption{Packets reaching bandwith transition}
 \label{fig:bandwidth_transition}
