@@ -3,5 +3,5 @@ book.pdf
 book.aux
 book.out
 book.toc
-*.png
+png/
 sources/
