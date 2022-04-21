@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="mirror_proxy.svg"
+   inkscape:export-filename="/home/eric/currency.engineering/book/png/08/mirror_proxy.png"
+   inkscape:export-xdpi="192"
+   inkscape:export-ydpi="192"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="true"
+     showguides="false"
+     inkscape:zoom="1.8387205"
+     inkscape:cx="538.68981"
+     inkscape:cy="594.97895"
+     inkscape:window-width="3070"
+     inkscape:window-height="2128"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:snap-global="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid938"
+       spacingx="2.6458333"
+       spacingy="2.6458333" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect119391"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect119305"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect119009"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect119003"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect96577"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect96551"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect96545"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect27705"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect27699"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect15419"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect15413"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect2046"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1960"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <marker
+       style="overflow:visible"
+       id="marker1693"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="TriangleOutL"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         id="path1691" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="TriangleInL"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="TriangleInL"
+       inkscape:isstock="true">
+      <path
+         transform="scale(-0.8)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         id="path1539" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker1675"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="TriangleOutL"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         id="path1548" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lstart"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path1406" />
+    </marker>
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1324"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1287"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <marker
+       style="overflow:visible"
+       id="TriangleOutL"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="TriangleOutL"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         id="path1192" />
+    </marker>
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1048"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect41"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:0.5;fill:#ececec;stroke:#000000;stroke-width:0.4"
+       id="rect1062"
+       width="26.458332"
+       height="26.458332"
+       x="26.458324"
+       y="21.166668"
+       ry="7.0058491e-06" />
+    <rect
+       style="opacity:0.5;fill:#ececec;stroke:#000000;stroke-width:0.4"
+       id="rect1168"
+       width="26.458332"
+       height="26.458332"
+       x="105.83334"
+       y="21.166668"
+       ry="7.0058491e-06" />
+    <path
+       style="opacity:0.5;fill:#ececec;stroke:#000000;stroke-width:0.4;marker-end:url(#marker1693)"
+       d="m 106.20647,39.687501 c -16.881087,0 -33.762414,0 -50.643978,0"
+       id="path1322"
+       inkscape:path-effect="#path-effect1324"
+       inkscape:original-d="m 106.20647,39.687501 c -16.881087,2.65e-4 -33.762414,2.65e-4 -50.643978,0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity:0.5;fill:#ececec;stroke:#000000;stroke-width:0.4;marker-end:url(#marker1693)"
+       d="m 52.543517,29.104168 c 16.881083,0 33.76241,0 50.643973,0"
+       id="path2042"
+       inkscape:path-effect="#path-effect2046"
+       inkscape:original-d="m 52.543517,29.104168 c 16.881083,2.65e-4 33.76241,2.65e-4 50.643973,0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="79.054054"
+       y="26.706629"
+       id="text5928"><tspan
+         sodipodi:role="line"
+         id="tspan5926"
+         style="stroke-width:0.264583"
+         x="79.054054"
+         y="26.706629">$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="74.787041"
+       y="46.9104"
+       id="text8916"><tspan
+         sodipodi:role="line"
+         id="tspan8914"
+         style="stroke-width:0.264583"
+         x="74.787041"
+         y="46.9104">goods</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="33.714291"
+       y="18.520836"
+       id="text12234"><tspan
+         sodipodi:role="line"
+         id="tspan12232"
+         style="stroke-width:0.264583"
+         x="33.714291"
+         y="18.520836">acct 1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="114.58365"
+       y="18.520836"
+       id="text15208"><tspan
+         sodipodi:role="line"
+         id="tspan15206"
+         style="stroke-width:0.264583"
+         x="114.58365"
+         y="18.520836">acct 2</tspan></text>
+    <rect
+       style="opacity:0.5;fill:#ececec;stroke:#000000;stroke-width:0.4"
+       id="rect15405"
+       width="26.458332"
+       height="26.458332"
+       x="26.458317"
+       y="119.0625"
+       ry="7.0058491e-06" />
+    <rect
+       style="opacity:0.5;fill:#ececec;stroke:#000000;stroke-width:0.4"
+       id="rect15407"
+       width="26.458332"
+       height="26.458332"
+       x="105.83333"
+       y="119.0625"
+       ry="7.0058491e-06" />
+    <path
+       style="opacity:0.5;fill:#ececec;stroke:#000000;stroke-width:0.4;marker-end:url(#marker1693)"
+       d="m 106.20646,137.58333 c -16.881084,0 -33.762411,0 -50.643975,0"
+       id="path15409"
+       inkscape:path-effect="#path-effect15413"
+       inkscape:original-d="m 106.20646,137.58333 c -16.881084,2.7e-4 -33.762411,2.7e-4 -50.643975,0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity:0.5;fill:#ececec;stroke:#000000;stroke-width:0.4;marker-end:url(#marker1693)"
+       d="m 52.54351,127 c 16.881083,0 33.76241,0 50.64397,0"
+       id="path15415"
+       inkscape:path-effect="#path-effect15419"
+       inkscape:original-d="m 52.54351,127 c 16.881083,2.6e-4 33.76241,2.6e-4 50.64397,0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="76.942955"
+       y="124.6671"
+       id="text15423"><tspan
+         sodipodi:role="line"
+         id="tspan15421"
+         style="stroke-width:0.264583"
+         x="76.942955"
+         y="124.6671">&quot;$&quot;</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="74.621017"
+       y="144.80623"
+       id="text15427"><tspan
+         sodipodi:role="line"
+         id="tspan15425"
+         style="stroke-width:0.264583"
+         x="74.621017"
+         y="144.80623">goods</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="27.747044"
+       y="116.41667"
+       id="text15431"><tspan
+         sodipodi:role="line"
+         id="tspan15429"
+         style="stroke-width:0.264583"
+         x="27.747044"
+         y="116.41667">proxy acct 1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="106.58477"
+       y="116.41667"
+       id="text15435"><tspan
+         sodipodi:role="line"
+         id="tspan15433"
+         style="stroke-width:0.264583"
+         x="106.58477"
+         y="116.41667">proxy acct 2</tspan></text>
+    <rect
+       style="opacity:0.5;fill:#ececec;stroke:#000000;stroke-width:0.4"
+       id="rect27691"
+       width="26.458332"
+       height="26.458332"
+       x="26.458317"
+       y="79.375"
+       ry="7.0058491e-06" />
+    <rect
+       style="opacity:0.5;fill:#ececec;stroke:#000000;stroke-width:0.4"
+       id="rect27693"
+       width="26.458332"
+       height="26.458332"
+       x="105.83334"
+       y="79.375"
+       ry="7.0058491e-06" />
+    <path
+       style="opacity:0.5;fill:#ececec;stroke:#000000;stroke-width:0.4;marker-end:url(#marker1693)"
+       d="m 52.54351,87.312502 c 16.881083,0 33.76241,0 50.64397,0"
+       id="path27701"
+       inkscape:path-effect="#path-effect27705"
+       inkscape:original-d="m 52.54351,87.312502 c 16.881083,2.6e-4 33.76241,2.6e-4 50.64397,0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="76.942955"
+       y="84.979599"
+       id="text27709"><tspan
+         sodipodi:role="line"
+         id="tspan27707"
+         style="stroke-width:0.264583"
+         x="76.942955"
+         y="84.979599">$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="34.677944"
+       y="76.729172"
+       id="text27717"><tspan
+         sodipodi:role="line"
+         id="tspan27715"
+         style="stroke-width:0.264583"
+         x="34.677944"
+         y="76.729172">acct 1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="114.13676"
+       y="76.729172"
+       id="text27721"><tspan
+         sodipodi:role="line"
+         id="tspan27719"
+         style="stroke-width:0.264583"
+         x="114.13676"
+         y="76.729172">acct 2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="145.52083"
+       y="90.818878"
+       id="text41087"><tspan
+         sodipodi:role="line"
+         id="tspan41085"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         x="145.52083"
+         y="90.818878">digital currency</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         x="145.52083"
+         y="97.874428"
+         id="tspan56159">owned by bank</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="145.52083"
+       y="132.29167"
+       id="text47507"><tspan
+         sodipodi:role="line"
+         id="tspan47505"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         x="145.52083"
+         y="132.29167">account bank presents</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         x="145.52083"
+         y="139.34723"
+         id="tspan73477">to account holder</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8.46667px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       x="13.229166"
+       y="13.229166"
+       id="text78977"><tspan
+         sodipodi:role="line"
+         id="tspan78975"
+         style="stroke-width:0.264583;-inkscape-font-specification:'serif, Normal';font-family:serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:8.46666667px;font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+         x="13.229166"
+         y="13.229166">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+       x="13.229159"
+       y="66.145828"
+       id="text85285"><tspan
+         sodipodi:role="line"
+         id="tspan85283"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         x="13.229159"
+         y="66.145828">B</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+       x="13.22917"
+       y="166.6875"
+       id="text93311"><tspan
+         sodipodi:role="line"
+         id="tspan93309"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         x="13.22917"
+         y="166.6875">C</tspan></text>
+    <rect
+       style="opacity:0.5;fill:#ececec;stroke:#000000;stroke-width:0.4"
+       id="rect96537"
+       width="23.812508"
+       height="21.166664"
+       x="29.104162"
+       y="219.60417"
+       ry="7.0058491e-06" />
+    <rect
+       style="opacity:0.5;fill:#ececec;stroke:#000000;stroke-width:0.4"
+       id="rect96539"
+       width="21.166655"
+       height="21.166664"
+       x="105.83334"
+       y="219.60417"
+       ry="7.0058491e-06" />
+    <path
+       style="opacity:0.5;fill:#ececec;stroke:#000000;stroke-width:0.4;marker-end:url(#marker1693)"
+       d="m 105.83333,235.47917 c -16.881082,0 -33.762409,0 -50.643973,0"
+       id="path96541"
+       inkscape:path-effect="#path-effect96545"
+       inkscape:original-d="m 105.83333,235.47917 c -16.881082,2.7e-4 -33.762409,2.7e-4 -50.643973,0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity:0.5;fill:#ececec;stroke:#000000;stroke-width:0.4;marker-end:url(#marker1693)"
+       d="m 52.170382,224.89584 c 16.881083,0 33.76241,0 50.643968,0"
+       id="path96547"
+       inkscape:path-effect="#path-effect96551"
+       inkscape:original-d="m 52.170382,224.89584 c 16.881083,2.6e-4 33.76241,2.6e-4 50.643968,0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="76.569824"
+       y="222.56294"
+       id="text96555"><tspan
+         sodipodi:role="line"
+         id="tspan96553"
+         style="stroke-width:0.264583"
+         x="76.569824"
+         y="222.56294">&quot;$&quot;</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="74.247887"
+       y="242.70207"
+       id="text96559"><tspan
+         sodipodi:role="line"
+         id="tspan96557"
+         style="stroke-width:0.264583"
+         x="74.247887"
+         y="242.70207">goods</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="27.747055"
+       y="216.95834"
+       id="text96563"><tspan
+         sodipodi:role="line"
+         id="tspan96561"
+         style="stroke-width:0.264583"
+         x="27.747055"
+         y="216.95834">proxy acct 1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="106.58478"
+       y="216.95834"
+       id="text96567"><tspan
+         sodipodi:role="line"
+         id="tspan96565"
+         style="stroke-width:0.264583"
+         x="106.58478"
+         y="216.95834">proxy acct 2</tspan></text>
+    <path
+       style="opacity:0.5;fill:#ececec;stroke:#000000;stroke-width:0.4;marker-end:url(#marker1693)"
+       d="m 52.543529,185.20833 c 16.881083,0 33.76241,0 50.643971,0"
+       id="path96573"
+       inkscape:path-effect="#path-effect96577"
+       inkscape:original-d="m 52.543529,185.20833 c 16.881083,2.6e-4 33.76241,2.6e-4 50.643971,0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="76.94297"
+       y="182.87543"
+       id="text96581"><tspan
+         sodipodi:role="line"
+         id="tspan96579"
+         style="stroke-width:0.264583"
+         x="76.94297"
+         y="182.87543">$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="24.630945"
+       y="169.26932"
+       id="text96585"><tspan
+         sodipodi:role="line"
+         id="tspan96583"
+         style="stroke-width:0.264583"
+         x="24.630945"
+         y="169.26932">bank 1's acct</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="145.52083"
+       y="191.36055"
+       id="text96595"><tspan
+         sodipodi:role="line"
+         id="tspan96591"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         x="145.52083"
+         y="191.36055">digital currency</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         x="145.52083"
+         y="198.41611"
+         id="tspan96593">owned by bank</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="145.52083"
+       y="232.83334"
+       id="text96601"><tspan
+         sodipodi:role="line"
+         id="tspan96597"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         x="145.52083"
+         y="232.83334">account bank presents</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         x="145.52083"
+         y="239.8889"
+         id="tspan96599">to account holder</tspan></text>
+    <rect
+       style="opacity:0.5;fill:#ececec;stroke:#000000;stroke-width:0.4"
+       id="rect96625"
+       width="31.75"
+       height="31.75"
+       x="105.83333"
+       y="174.625"
+       ry="7.0058491e-06" />
+    <rect
+       style="opacity:0.5;fill:#ececec;stroke:#000000;stroke-width:0.4"
+       id="rect96729"
+       width="31.75"
+       height="31.75"
+       x="21.16667"
+       y="174.625"
+       ry="7.0058491e-06" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="110.03997"
+       y="169.01976"
+       id="text113681"><tspan
+         sodipodi:role="line"
+         id="tspan113679"
+         style="stroke-width:0.264583"
+         x="110.03997"
+         y="169.01976">bank 2's acct</tspan></text>
+    <rect
+       style="opacity:0.5;fill:#ececec;stroke:#000000;stroke-width:0.4"
+       id="rect118995"
+       width="23.812508"
+       height="21.166664"
+       x="29.10416"
+       y="269.875"
+       ry="7.0058491e-06" />
+    <rect
+       style="opacity:0.5;fill:#ececec;stroke:#000000;stroke-width:0.4"
+       id="rect118997"
+       width="21.166655"
+       height="21.166664"
+       x="105.83334"
+       y="269.875"
+       ry="7.0058491e-06" />
+    <path
+       style="opacity:0.5;fill:#ececec;stroke:#000000;stroke-width:0.4;marker-end:url(#marker1693)"
+       d="m 105.83333,285.74999 c -16.881084,0 -33.762411,0 -50.643975,0"
+       id="path118999"
+       inkscape:path-effect="#path-effect119003"
+       inkscape:original-d="m 105.83333,285.74999 c -16.881084,2.7e-4 -33.762411,2.7e-4 -50.643975,0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity:0.5;fill:#ececec;stroke:#000000;stroke-width:0.4;marker-end:url(#marker1693)"
+       d="m 52.17038,275.16666 c 16.881083,0 33.76241,0 50.64397,0"
+       id="path119005"
+       inkscape:path-effect="#path-effect119009"
+       inkscape:original-d="m 52.17038,275.16666 c 16.881083,2.6e-4 33.76241,2.6e-4 50.64397,0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="76.569824"
+       y="272.83377"
+       id="text119013"><tspan
+         sodipodi:role="line"
+         id="tspan119011"
+         style="stroke-width:0.264583"
+         x="76.569824"
+         y="272.83377">&quot;$&quot;</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="74.247887"
+       y="292.9729"
+       id="text119017"><tspan
+         sodipodi:role="line"
+         id="tspan119015"
+         style="stroke-width:0.264583"
+         x="74.247887"
+         y="292.9729">goods</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="27.747053"
+       y="267.22916"
+       id="text119021"><tspan
+         sodipodi:role="line"
+         id="tspan119019"
+         style="stroke-width:0.264583"
+         x="27.747053"
+         y="267.22916">proxy acct 1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="106.58478"
+       y="267.22916"
+       id="text119025"><tspan
+         sodipodi:role="line"
+         id="tspan119023"
+         style="stroke-width:0.264583"
+         x="106.58478"
+         y="267.22916">proxy acct 2</tspan></text>
+    <circle
+       style="opacity:0.5;fill:#000000;stroke:#000000;stroke-width:0.4"
+       id="path119049"
+       cx="80.697914"
+       cy="252.67708"
+       r="1.3229166" />
+    <circle
+       style="opacity:0.5;fill:#000000;stroke:#000000;stroke-width:0.4"
+       id="circle119149"
+       cx="80.686432"
+       cy="257.21094"
+       r="1.3229166" />
+    <circle
+       style="opacity:0.5;fill:#000000;stroke:#000000;stroke-width:0.4"
+       id="circle119151"
+       cx="80.686432"
+       cy="261.78085"
+       r="1.3229166" />
+    <path
+       style="opacity:0.5;fill:#000000;stroke:#000000;stroke-width:0.4"
+       d="m 105.83333,190.49999 c 10.5836,0 21.16693,0 31.75,0"
+       id="path119303"
+       inkscape:path-effect="#path-effect119305"
+       inkscape:original-d="m 105.83333,190.49999 c 10.5836,2.7e-4 21.16693,2.7e-4 31.75,0" />
+    <path
+       style="opacity:0.5;fill:#000000;stroke:#000000;stroke-width:0.4"
+       d="m 21.166666,190.49999 c 10.5836,0 21.16693,0 31.75,0"
+       id="path119387"
+       inkscape:path-effect="#path-effect119391"
+       inkscape:original-d="m 21.166666,190.49999 c 10.5836,2.7e-4 21.16693,2.7e-4 31.75,0" />
+  </g>
+</svg>

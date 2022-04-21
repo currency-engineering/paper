@@ -1,7 +1,8 @@
-book.log
-book.pdf
-book.aux
-book.out
-book.toc
+paper.log
+paper.pdf
+paper.aux
+paper.out
+paper.toc
 png/
-sources/
+gitignore/
+watch.sh
