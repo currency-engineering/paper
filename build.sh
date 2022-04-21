@@ -1,3 +1,3 @@
 #!/bin/bash
 
-pdflatex book.tex
+pdflatex paper.tex
