@@ -1,69 +1,114 @@
-\chapter{Implementation}
-\label{chapter:implementation}
+\section{Implementation}
+\label{section:implementation}
 
-Using an open-source blockchain framework, and thereby leveraging the rapid technological advances
-in the area of digital currency infrastructure is the only way to realistically build a digital
-currency. Parity's open-source Substrate blockchain framework was used to build the Shannon digital
-currency.
+\underline{Abstraction Layer over Accounts}
 
-\subsubsection{Proof-of-stake Consensus}
-
-Substrate's proof-of-stake consensus mechanism means that the unique, dynamic state on which the
-distributed nodes reach agreement on is an abstraction of a state machine. A state machine is an
-abstraction where functions are continuous sequentially applied to the the machine's state resulting
-in a new, changed state. One of the implications of this is that it gives great flexibility as to
-the choice of type of state.
-
-Reduces energy consumption to very little.
-
-\subsubsection{State Machine Abstraction}
-
-Substrate's state also holds the code that defines the state machine, meaning that the state machine
-transitions can be easily changed.
-
-\subsubsection{Decentralization}
-
-Additions Substrate is highly decentralized, meaning that a clear distinction between decentralized
-and centralized function can be made.
-
-\section{Isolation}
-
-To a large extent, the underlying consensus infrastructure is isolated from the currency design. 
-
-\section{Decentralization}
-
-Substrate is a decentralized blockchain framework. Our initial build, however uses
-proof-of-authority to control aspects of the blockchain.
-
-1. upgrades
-
-2. price level measurement and calculation
-
-3. demand control
-
-Parity connect improves decentralization.
-
-\section{Transactions}
-
-\section{Conservative Approach}
-
-Limit time transactions to fixed schedule repayments. No contract transactions. No external
-transactions.
-
-\section{Data Collection and Price Level Calculation}
-
-\section{Research and Upgrades}
-
-Privacy
-
-Price Measurements
-
-Upgrade governance
-
-Algorithmic control
-
-\section{Scalability}
+To implement a currency design that does not constrain 
 
 
+we need to reconsider the interaction between the micro-level, the economic participants and owners
+of accounts, and the macro-level requirements.
 
+The design strategy we take is to define the macro-level requirements and then to search for ways to
+control the currency so that the currency is likely to map out to those macro-level requirements.   
+
+We specify the macro-level requirements as
+
+1. Sustained stability.
+
+2. Macro-level equilibriation.
+
+Simple accounts that hold a number with some control of the aggregate value in all accounts is the
+digital equivalent of paper money. This design is insufficiently controlled to achieve our two
+macro-level requirements.   
+
+To achieve these outcomes we apply a abstraction layer over these accounts. This abstraction layer
+does the following:
+
+\underline{Exchange Transactions}
+
+1. Present to the user a value that is the product of the user's base account value and an single,
+global value that we call the demand index ($D_x$). This product is the value that users generally
+see and is the value in which price agreements are made. This value gradually changes as the demand
+index changes, appearing to users much as a bank account that has gradual increases as an interest
+rate is applied to it. As such, it presents no usability difficulties to the user.
+
+3. All exchange transactions must be associated with a quantity and a goods or service category. An
+exchange transaction is only valid if both the seller and buyer confirm the same goods or service
+category. This serves three purposes.
+
+a. It asserts that the transaction is an exchange transaction, and as such, has no associated
+contract with it beyond the current delivery of the goods or service. By doing this it confirms that
+there are no future legal commitments to any future repayment. This is required to limit the use of
+exchange transactions for the purpose of some other transaction category.
+
+b. The data can be used, with necessary software mechanism to ensure the privacy of the data, to
+accurately calculate the price index. 
+
+c. It serves as a record for the seller and buyer to resolve any disputes, i.e. it acts as a
+receipt or record of agreement.
+
+Beyond the seller and buyer entering the same goods and service category, it is easy for seller and
+buyer to collude and provide incorrect information.
+
+4. There are intermediate accounts. These are required because all exchange transactions must be
+associated
+
+TODO
+
+\underline{Time Transactions}
+
+2. Values that set future payments, in particular for repayments on time transactions, are
+denominated in a root value and the product of the price index ($P_x$). In this way, the purchasing
+power of that value remains absolutely constant, and as such there it present any possibility of
+inflation feedback. All repayments on time transactions must be defined at the time the money is
+borrowed and designated as a time transaction.
+
+\underline{Contract Transactions}
+
+Contract transactions are prevented by the requirement that borrowers must make repayments to the
+same party that initially lent the money. There are possible ways that users could subvert these
+requirements which we discuss in a later section.
+
+\underline{External Transactions}
+
+The provision of an exchange transaction mechanism will be deferred. The possibility of providing
+exchange transaction functionality with external currencies depends on the design of external
+currencies, in particular the accuracy of their price index, and their control over contract
+transactions. If we consider external transactions between two currencies of the kind we are
+presenting in this paper, then an external exchange rate fixed to the relative price index of the
+two currencies, and restricting transactions to exchange transactions by requiring the recording of
+goods or service cateogry and quantity may be a suitable design. This kind of system would require a
+pair of special aggregate accounts specifically for external transactions to pair up inflow and
+outflow. In this system, the pairing of inflow and outflow would halt if either account became
+empty. Another possibility would be to implement a floating exchange rate. The potential difficulty
+with this design is that it is relatively easy for users to use exchange accounts in lieu or time or
+contract transactions, and so it may be possible for users to engage in high-frequency capital
+interactions across the external boundary despite the disincentive of having no legal resort on
+repayment failure.
+
+\underline{Usability}
+
+The controls we plan to implement will have minimal impact on any user who intends to use the
+currency for exchange or time transactions. There is an additional requirement for both seller and
+buyer to agree on a transaction and to record goods category. Indexed units of account have been
+used in Chile for a number of decades without significant usability problems, and the use of indexed
+units of account in a digital currency could potentially further simplify their use.
+
+One important exception, however, are restrictions on the types of repayment schedules for time
+transactions. If repayment schedules are overly flexible, the repayments could possibly be used,
+given people's ingenuity in using financial mechanisms to enrich themselves, as a substitute for
+contract transactions. The extent to which this would happen in practice is unknown, and so starting
+with relatively strict controls and relaxing restrictions with experience is probably a reasonable
+approach.
+
+\underline{Using One Transaction Category in Lieu of Another}
+
+The are various methods that users may potentially use to one category of transaction of another.
+The most serious risk is that users find ways to make contract transactions. The main barrier to
+preventing this is to ensure that repayments can only be made to the initial lender's account. The
+second barrier is to ensure that there is no legal protection to protect creditors from debtor's
+failure to make ``repayments''. These barriers should be sufficient on the condition that there are
+no significant economic incentives for engaging in such activity. In general such users will choose to
+use other currencies, rather than a currency with these barriers.
 
