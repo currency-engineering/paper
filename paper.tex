@@ -1,8 +1,9 @@
-\documentclass[a4paper]{book}
+\documentclass[a4paper]{article}
 
 \usepackage{graphicx}
 \usepackage{float}                                              % Required to use [H] in figures.
 \usepackage[colorlinks=true, urlcolor=blue]{hyperref}           % For hyperlinks
+\usepackage[margin=1.0cm]{geometry}                     % Set the left margin
 \graphicspath{{png}}                                            % Set the default path for images.
 \DeclareGraphicsExtensions{.png}                                % Only use image files with .png extension.
 \linespread{1.30}                                               % Set line-height.
@@ -13,13 +14,14 @@
 \begin{document}
 
     \title{Currency Engineering}
-    \author{Henri D. Rathgeber \and Eric Findlay}
+    \author{Eric Findlay*}
     \date{2022}
     \maketitle
 
-    \tableofcontents
+    *The fundamental results presented in this paper are a re-exposition and extension of a series
+    of unpublished papers by the physicist Henri D. Rathgeber (1908-1995). See endnotes for details.
 
-    % \input{ch/prices} 
+    \tableofcontents
 
     \input{01_introduction/01_introduction}
     \input{02_dynamic_systems_and_control/02_dynamic_systems_and_control}
@@ -32,6 +34,7 @@
     \input{09_other_transactions/09_other_transactions}
     \input{10_implementation/10_implementation}
     \input{11_conclusion/11_conclusion}
+    \input{12_endnotes/12_endnotes}
     \input{bibliography/bibliography}
 
 \end{document}
