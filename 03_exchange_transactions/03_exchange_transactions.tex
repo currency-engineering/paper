@@ -67,74 +67,89 @@ goods category is
 
 We can sum $f_i$ for all transactions in a given period.
 
-\[
+\begin{equation}\label{equation:f}
     F = \sum_i f_i
-\]
+\end{equation}
 
 As will be shown later, the aggregate value we are interested in is an accurate measure of the price
 level such that a person own $x$ dollars now has the same purchasing power at any time in the
-future. We need to specify this more precisely.
+future. We need to specify this more precisely. The quantity and proportion of different goods
+transacted using a currency changes over time. We use the notion of purchasing power to construct a
+measure to handle this. We can image an ``abstract person'' who we feed dollars, and make random
+selections of goods and services \textit{per dollar}.  So we want to find numbers $P$ and $P'$ such
+that the following
+equation holds
 
-The quantity and proportion of different goods transacted using a currency changes over time. We use
-the notion of purchasing power to construct a measure to handle this.
+\begin{equation}\label{equation:p_requirement}
+    \frac 1 P \left[ \frac {p_1 q_1} F + \cdots + \frac {p_n q_n} F \right]
+    = \frac 1 {P'} \left[ \frac {p_1' q_1'} {F'} + \cdots + \frac {p_n' q_n'} {F'} \right]
+\end{equation}
 
-We can image an ``abstract person'' who we feed a dollar now, and makes random selections of goods
-and services to purchase per dollar. This random selection of purchases on average accounts for a
-given proportion of the total amount of purchases made during that time period. 
-
-We define the price index that changes over time $P_i$ such that
-
-\[
-    \frac {c_j} {P_j} = \frac {c_k} {P_k}
-\]
-
-for every time period $j$ or $k$, this equality holds, where $c$ is the average proportion of the
-whole amount of transactions that our ``abstract person'' makes. The important point of this
-discussion is to present the case that 
-
-\[
-    P = p_i \left( \frac {f_i} F \right) + \cdots + p_n \left( \frac {f_n} F \right) = \sum_i p_i
-    \left( \frac {f_i} F \right)
-\]
-
-where the central measure of price we are looking for is where each purchase is weighted by the
-proportion of total payments  for that purchase, as this is the value that would make equation TODO
-hold. Now we want to see how $P$ and $F$ are related, or in other words we want to find a function
-such that
+Variables without a dash refer to time period $t=0$ while variables with a dash refer to time period
+$t=1$. This is a dynamic equation, i.e. it defines relations relations across time. We'll proceed by
+constructing some measures of aggregate quantity and aggregate price level, and then check that
+these measure do conform to our requirement in equation (\ref{equation:p_requirement}). First, we
+want to construct a measure of price level $P$ as a function of $p_1, \dots p_n$, and a measure of
+aggregate quanitity $Q$ as a function of $q_1, \dots q_n$. These are static variables, dependent
+only on other variables that are measured at the same time. But the problem is that we can't
+aggregate some $Q$ from $q_1, \dots q_n$ because the units for each goods category can be different.
+This also means we can't aggregate some $P$ from $p_q, \dots q_n$ because the units for $p_i$ are
 
 \[
-    Q = f(P, F)
+    \left[ \frac {\$} {i} \right]  
 \]
 
-where $Q$ is some measure of quantity. The problem however is that we have
+where $i$, the units the goods category is measured in, can be different. The way we get around this
+problem is to constrain the units we are working in. As an aside, it is interesting to note that
+David Hume's argument heavily relies on the price units.  What we are doing here is extending Hume's
+notion to both price units and quantity units. 
+
+If at any period of time the following quantities of goods are transacted
 
 \[
-    q_1, q_2, \dots q_n
+    \overline Q = \left( q_1, \dots ,q_n \right)
 \]
 
-where $q_i$ all have different units, so we cannot sum them.
+then we choose any set of units $ \dot Q = c \overline Q $. In other words we choose a ``basket of
+goods'' that is an exact multiple of the actual goods transacted at any time. This quantity has the
+units
 
-If we double the unit in which a given $q_i$ is denominated in, the $p_i$ halves for that new unit.
-We can therefore use a trick is to select all the units of $q_i$. Lets choose units of $q_i$ such
-that the value of each
+\begin{equation}\label{equation:basket}
+    \left[ B \right] = \left( \left[ c q_1 \right] \dots \left[ c q_n \right] \right)
+\end{equation}
+
+and now we define $P$ as the quantity of baskets $B$ that make up total transactions $F$, i.e.  
 
 \[
-    p_i \left( \frac {f_i} F \right)
+    F = P Q
 \]
 
-becomes a constant. In varying the unit of $q_i$, $f_i$ does not change, because $f_i$ doesn't
-depend on what unit we use. The total cost of 4 groups of 2 apples is the same as 8 apples.
+The units of $P$ are $\left[ \frac {\$} B \right]$. Very much like $f_i$ is independent of the
+scalar value of a goods category unit we choose, $F$ in independent of the scalar value of the
+basket of goods we choose, given that equation (\ref{equation:basket}) holds. We now look at the
+dynamics. We have one degree of freedom remaining, i.e. our choice of $c$. At any time period, we
+can choose an arbitrary $c$ but our goal is to be able to compare aggregate price across time. The
+problem we face is that the relative proportions and prices $p_i$ and $q_i$ can change across time.
 
+The problem becomes trivial if the proportions do not change, we just use the same unit for all time
+periods. To account for changes in relative proportions of prices and quantities, which directly map
+into changes in our basket of goods, we need to relative change in the makeup of the basket of goods
+from aggregate changes. We do this by taking setting $c$ and $c'$ such that the average change in
+quantities of goods in our basket remain constant, weighted by relative proportion of spending
+$ \frac {f_i} F $.
 
+\begin{equation}
+    \frac {c'} c = \frac {\varepsilon [ B ]} {\varepsilon [B']}
+\end{equation}
 
+where the expected value $\varepsilon$ is weighted by $\frac {f_i} F$. This can be written
 
+\[
+    \frac 1 c \left[ \frac {f_1} F q_1 + \dots + \frac {f_n} F q_n \right] =
+    \frac 1 {c'} \left[ \frac {f_1'} {F'} q_1' + \dots + \frac {f_n} {F'} q_n' \right]
+\]
 
-
-
-
-
-
-
+Increasing $c$ by a factor, reduces $Q$ by this factor, and increases $P$ by this factor.
 
 
 
