@@ -73,7 +73,39 @@ We can sum $f_i$ for all transactions in a given period.
 
 As will be shown later, the aggregate value we are interested in is an accurate measure of the price
 level such that a person own $x$ dollars now has the same purchasing power at any time in the
-future. We need to specify this more precisely. The quantity and proportion of different goods
+future. To make this more precise we need to define purchasing power. 
+
+Suppose we have an economy at time $t=0$ that makes transactions 
+
+\[
+    \left( q_1, \dots, q_n \right)
+\]
+
+where there are $n$ goods categories, and the unit of quantity for each goods category may be
+different. We write the units corresponding to each goods category as
+
+\[
+    \left( \left[ q_1 \right], \dots, \left[ q_n \right] \right)
+\]
+
+The average price for all transactions within a good category can be written
+
+\[ 
+    \left( p_1, \dots, p_n \right)
+\]
+
+with the corresponding units
+
+\[
+    \left( \frac {\$} {\left[ q_1 \right]}, \dots, \frac {\$} {\left[ q_n \right]} \right)
+\]
+
+
+
+
+
+
+We need to specify this more precisely. The quantity and proportion of different goods
 transacted using a currency changes over time. We use the notion of purchasing power to construct a
 measure to handle this. We can image an ``abstract person'' who we feed dollars, and make random
 selections of goods and services \textit{per dollar}.  So we want to find numbers $P$ and $P'$ such
@@ -151,7 +183,31 @@ where the expected value $\varepsilon$ is weighted by $\frac {f_i} F$. This can 
 
 Increasing $c$ by a factor, reduces $Q$ by this factor, and increases $P$ by this factor.
 
+\subsection{Concrete Example}
 
+To make this clearer, lets look at a concrete example. Lets say there are two goods (maybe apples
+and bananas) are transacted in a digital currency $a$ and $b$.
+
+In the first period the transactions are
+
+    \begin{twocol}
+        2 apples  & \$2 \\
+        4 bananas & \$1 \\
+    \end{twocol}
+
+and in the second period the transactions are
+
+    \begin{twocol}
+        3 apples  & \$2 \\
+        4 bananas & \$1 \\
+    \end{twocol}
+
+In the first time period we construct a basket with units $\left[ 0.5(2 \textrm{apples}, 4
+\textrm{bananas}) \right]$.
+
+% $F=8$, $Q=2$, and $P=4$. 
+
+% In the second time period we construct a basket with units $left[0.25(0.75 \textrm{apples},  
 
 \subsection{Control of Price Level}
 

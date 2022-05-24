@@ -4,12 +4,25 @@
 \usepackage{float}                                              % Required to use [H] in figures.
 \usepackage[colorlinks=true, urlcolor=blue]{hyperref}           % For hyperlinks
 \usepackage[margin=1.0cm]{geometry}                     % Set the left margin
+\usepackage{tabularx}
 \graphicspath{{png}}                                            % Set the default path for images.
 \DeclareGraphicsExtensions{.png}                                % Only use image files with .png extension.
 \linespread{1.30}                                               % Set line-height.
 
 \hbadness=99999  % or any number >=10000
 \vbadness=99999  % or any number >=10000
+
+\newenvironment{twocol}
+{
+    \vspace*{8pt}
+    \tabularx{\textwidth}{|l|X|}
+    \hline
+}
+{
+    \hline
+    \endtabularx
+    \vspace*{8pt}
+}
 
 \begin{document}
 
