@@ -83,6 +83,82 @@ We'll denote the average price for each $q_i$.
     \left( p_1, \dots, p_N \right)
 \]
 
+The units for the average prices are 
+
+\[
+    \left( \left[ \frac {\$} {p_1} \right], \dots, \left[ \frac {\$} {p_N} \right]  \right)
+\]
+
+We cannot sum either these prices or quantities because they can have different units. But each
+payment $p_i q_i$ can be summed because its unit, using dimensional analysis, is
+
+\[
+    \left[ \frac {\$} {q_i} \right] \left[ q_i \right] = \left[ \$ \right]
+\]
+
+So for a given time period, total payments for transactions for a currency is 
+
+\[
+    F = p_i q_i + \dots + p_N q_N
+\]
+
+We want to construct a aggregate measure of prices. As will become clear later in the paper we want
+a measure $P$ that can be used to isolate purchasing power from the inflation rate. For example, if
+a person has a certain amount of currency in their account at time $t=0$, and that they can buy a
+certain amount with this currency, we want to know how much money they must have in their account at
+time $t=1$ so that they can buy the same amount. As written, the notion of ``price level'',
+``purchasing power'' and ``amount'' are vague and require mathematical treatment.
+
+Suppose at a given time the transactions with quantites
+
+\[
+    \overline Q = \left( q_1, \dots, q_N \right) \textrm{ with corresponding prices } \left( p_1, \dots, p_N \right)
+\]
+
+occurs. We'll introduce Alice. We'll feed Alice a 1 dollar and Alice will spend this 1 dollar by
+randomly selecting goods categories in such a way that in the limit they purchase quantities all in
+proportion to total transactions. In other words,
+
+\[
+    \varepsilon_{q_1,\dots,q_n} = c_1 \overline Q
+\]
+
+where $c_1$ is a number between $0$ and $1$ and $\varepsilon_{q_1,\dots,q_n}$ is the expected value of
+the ``abstract person'''s purchases. The $c_1$ represents the purchasing power of the Alice. It
+represents the proportion of all transactions over which Alice has the power to purchase, per
+dollar. While purchasing power is the amount of goods that will buy a given unit of currency, the
+price level is its reciprocal, the amount of currency that will buy a unit of quantity.
+
+We need to make things more precise, and to check that our measure of price can be used as an index
+to isolate Alice's purchasing power from changes in the inflation rate. The motivate for this will
+become clear later in the paper.
+
+First we'll do a static analysis, and try to construct meaningful measures of aggregate price and
+quantity for a time period that has 
+
+\[
+    \overline Q = \left( q_1, \dots, q_N \right) \textrm{ with corresponding prices } \left( p_1, \dots, p_N \right)
+\]
+
+Here, the vector $\overline Q$ represents a collection of values, but we want to construct a single
+value that is a aggregate of these values. The problem is that each of these values may have
+different units. We can construct units that such as ``one apple and two oranges''. The problem is
+that if we do this it is impossible to express ``two apples and two oranges'' in these units. But if
+we consider only a single period of time that has $\overline Q$ transactions, then we can express
+this value in any unit of the form
+
+\[
+    \left( \left[ c q_1 \right], \dots \left[ c q_N \right] \right)
+\]
+
+for any number $c$. So in fact there is not just one, but a set of feasible units in which to
+express $\overline Q$. We refer to any one of these set of units as a ``basket of goods''.
+
+
+
+
+
+
 
 
 
