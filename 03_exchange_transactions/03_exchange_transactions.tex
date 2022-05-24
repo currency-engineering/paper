@@ -147,12 +147,39 @@ that if we do this it is impossible to express ``two apples and two oranges'' in
 we consider only a single period of time that has $\overline Q$ transactions, then we can express
 this value in any unit of the form
 
+\begin{equation}\label{equation:basket}
+    \left( \left[ \gamma q_1 \right], \dots \left[ \gamma q_N \right] \right)
+\end{equation}
+
+for any number $\gamma$. So in fact there is not just one, but a set of feasible units in which to
+express $\overline Q$. We refer to any one of these set of units as a ``basket of goods''. Given
+that we select one of these sets of units, we can then express $\overline Q$ as some number $Q$,
+where the units given by equation (\ref{equation:basket}) with a specific $\gamma$. The units of
+$Q$ is this basket of goods. Now we can set the price level as the payment for this basket of goods.
+This value $P$ is in units \$ per basket. And so
+
 \[
-    \left( \left[ c q_1 \right], \dots \left[ c q_N \right] \right)
+    F = PQ
 \]
 
-for any number $c$. So in fact there is not just one, but a set of feasible units in which to
-express $\overline Q$. We refer to any one of these set of units as a ``basket of goods''.
+The units used depends on the $\overline Q$ at a point in time. Of the proportion of $q_i$ changes
+we would have to use a different unit, and so we couldn't do any dynamic analysis (comparisions
+across time). We can solve this problem by further constraining our units. As noted, for any
+$\overline Q$ at any time we can construct a new unit. We further constrain this by setting the rule
+that given one basket of goods whose value of $\gamma$ is arbitrarily chosen, we constrain all other
+baskets of goods, by setting their $\gamma$ to a value such that all baskets of goods have the same  
+average of quantities weighted by their share of trade.
+
+\[
+    \frac 1 {\gamma} \left[ q_i \left( \frac {f_i} F \right) + \cdots + q_n \left( \frac {f_N} F
+    \right) \right] = \frac 1 {\gamma'} \left[ q_i' \left( \frac {f_i'} {F'} \right) + \cdots + q_n'
+    \left( \frac {f_N'} {F'}
+    \right) \right]
+\]
+
+Now, because $\gamma$ depends only the trade-weighted average of $\overline Q$, the distribution of
+$q_i$ around this average becomes irrelevant. This means that \textit{however} $\overline Q$
+changes, whatever its distribution, the relation $F=PQ$ is exact.  
 
 
 
