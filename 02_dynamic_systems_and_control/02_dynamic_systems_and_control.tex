@@ -11,11 +11,6 @@ mathematical methods.
 
 \subsection{Brief History of Mechanic Feedback Mechanisms}
 
-TODO: Huygens
-
-TODO: Watt
-
-TODO: Maxwell
 
 Prior to the Wright brother's first flight in December 1903, Orville and Wilbur Wright believed that
 the most fundamental problems they needed to solve were control problems. In September 1901 Wilbur
@@ -23,13 +18,87 @@ Wright's first public presentation on the feasibility of heavier-than-air flight
 this one feature [control] has been worked out the age of flying machines will have arrived, for all
 other difficulties are of minor importance."\cite{wright1908}
 
+\subsection{Feedback}
+
+\underline{feedforward}
+
+\underline{negative feedback}
+
+\underline{positive feedback}
+
 \subsection{PID Controllers}
 
-TODO
+PID controllers are very simple. PID controllers are remarkably robust and in universal use for a
+great variety of feedback control. So while they are not the only solution, they are a good starting
+model for thinking about feedback systems.
 
-\subsection{Feedback Systems and the Internet}
+\underline{History}
 
-TODO
+TODO: Huygens
+
+TODO: Watt
+
+TODO: Maxwell
+
+(around 1912)
+
+Elmer Sperry, who introduced the gyroscope invented by TODO to the USA, developed various automatic
+steering systems.
+
+\begin{quote}
+Elmer Sperry realized that the performance of the gyropilot seemed uncanny, for he had been told
+that no one could possibly invent a device incorporating the intuition of an expert quartermaster.
+He had in fact analyszed the "intuition" problem when he first began work on the pilot in 1912 and
+had decided that the helmsman's intuition was, in essence, tha ability to "ease off" and "meet" the
+helm.[21] Easing off involved lessening the rudder angle after the rudder had been put over and the
+ship had responded by swinging toward the desired heading; meeting was putting the rudder over to
+the other side (overthrow) to counter the tendency of the ship's angular momentum to carry it past
+the desired heading. If the helmsman did not perform these functions with skill, the ship continued
+to yaw. Sperry set out to devise a way of performing these functions mechanically and automatically.[22]
+\end{quote}
+
+`Easing off' is `Meeting' take the role of the `D' component of a PID controller, where the
+controller responds to the \textit{rate} at which the plant is moving towards the set point.
+
+TODO: Integral?
+
+
+\subsection{How Feedback Systems Go Wrong}
+
+\underline{Wrong Model}
+
+\underline{Complexity}
+
+\underline{Delay}
+
+\underline{Not Smooth}
+
+\underline{Errors}
+
+
+\underline{Wrong Parameters}
+
+While we introduced PID controllers in some detail, we don't consider their application to our
+problem in detail. Th The general notion of feedback is critical to our model. To deepen our
+understanding of feedback controllers. The reason why contemporary economies are unstable and
+sub-optimal, running at high levels of unemployment is because we have the wrong model. Before the
+practical application of PID controllers to currency control systems, we must find a better model. 
+
+\subsection{Errors and Noise}
+
+\subsection{Internet}
+
+% Some Abstractions - Multiplexing
+% Packet Switching
+% Some Abstractions - Hiding
+
+\underline{Introduction}
+
+\underline{TCP/IP}
+
+\underline{Congestion}
+
+\underline{Routing}
 
 % We are looking for a way that we can keep the conditions of the system in some desirable state.
 % Examples are ... If the system is predictable can use an open system. Many systems, however are not
@@ -830,3 +899,5 @@ TODO
 
 % [history of fixing the problems of the internet]
 
+
+\subsection{Discrete Model}
