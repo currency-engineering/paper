@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   sodipodi:docname="error_intuition.svg"
+   inkscape:export-filename="../png/error_intuition.png"
+   inkscape:export-xdpi="192"
+   inkscape:export-ydpi="192"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="true"
+     showguides="false"
+     inkscape:zoom="1.7229097"
+     inkscape:cx="396.71262"
+     inkscape:cy="561.25984"
+     inkscape:window-width="2494"
+     inkscape:window-height="2128"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:snap-global="false"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid938"
+       spacingx="2.6458333"
+       spacingy="2.6458333" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="TriangleOutL"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutL"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path1192" />
+    </marker>
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1048"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect41"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-miterlimit:2"
+       d="M 55.562499,42.333335 V 132.29166 H 121.70833"
+       id="path273"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="../png/error_intuition.png"
+       inkscape:export-xdpi="192"
+       inkscape:export-ydpi="192" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:0.95;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="81.01902"
+       y="138.59897"
+       id="text1162"><tspan
+         sodipodi:role="line"
+         style="font-size:7.05556px;stroke-width:0.264583"
+         x="81.01902"
+         y="138.59897"
+         id="tspan1592">error rate</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.05556px;stroke-width:0.264583"
+         x="81.01902"
+         y="145.30176"
+         id="tspan1596">of sent message</tspan></text>
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-miterlimit:2"
+       d="M 95.249998,132.29166 87.312499,119.0625"
+       id="path1318" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-miterlimit:2;stroke-dasharray:0.2, 0.6;stroke-dashoffset:0"
+       d="M 87.312499,119.0625 79.374999,105.83334 74.083332,95.250001 68.791666,82.020834 63.499999,60.854168 60.854166,42.333335"
+       id="path1322" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:0.85;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="20.746851"
+       y="40.950443"
+       id="text1342"><tspan
+         sodipodi:role="line"
+         id="tspan1340"
+         style="font-size:7.05556px;stroke-width:0.264583"
+         x="20.746851"
+         y="40.950443">%</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.05556px;stroke-width:0.264583"
+         x="20.746851"
+         y="46.94767"
+         id="tspan1344">redundancy</tspan></text>
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-miterlimit:2;stroke-dasharray:none;stroke-dashoffset:0"
+       d="M 55.562499,132.29166 H 52.916665"
+       id="path1396" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:0.95;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="20.746851"
+       y="129.08844"
+       id="text1400"><tspan
+         sodipodi:role="line"
+         id="tspan1398"
+         style="font-size:7.05556px;stroke-width:0.264583"
+         x="20.746851"
+         y="129.08844">message </tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.05556px;stroke-width:0.264583"
+         x="20.746851"
+         y="135.79123"
+         id="tspan1402">with no</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.05556px;stroke-width:0.264583"
+         x="20.746851"
+         y="142.494"
+         id="tspan1438">redundancy</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="cover">
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-miterlimit:2"
+       id="path524"
+       cx="95.249992"
+       cy="132.29166"
+       r="1.3229166" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="89.060669"
+       y="118.17986"
+       id="text1474"><tspan
+         sodipodi:role="line"
+         id="tspan1472"
+         style="font-size:7.05556px;stroke-width:0.264583"
+         x="89.060669"
+         y="118.17986">B</tspan></text>
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-miterlimit:2"
+       id="circle1476"
+       cx="87.3125"
+       cy="119.0625"
+       r="1.3229166" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="96.567078"
+       y="130.86874"
+       id="text1524"><tspan
+         sodipodi:role="line"
+         id="tspan1522"
+         style="font-size:7.05556px;stroke-width:0.264583"
+         x="96.567078"
+         y="130.86874">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="73.559799"
+       y="89.972717"
+       id="text1588"><tspan
+         sodipodi:role="line"
+         id="tspan1586"
+         x="73.559799"
+         y="89.972717"
+         style="font-size:7.05556px;stroke-width:0.264583">error rate of received message</tspan></text>
+  </g>
+</svg>

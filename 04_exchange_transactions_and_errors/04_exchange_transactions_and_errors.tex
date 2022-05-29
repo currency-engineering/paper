@@ -25,6 +25,43 @@
 
 \subsection{Information Theory}
 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.48]{04_exchange_transactions_and_errors/png/error_intuition}
+\caption{Intuition about Error Rates}
+\label{fig:error_intuition}
+\end{figure}
+
+Intuitively we might think about how adding redundancy to a message might change the error rate as
+in Figure \ref{fig:error_intuition}. The original message with a certain error rate and no
+redundancy is represented by point $A$. If we add some redundancy to the error message we might be
+able to reduce the error rate of the received message to $B$. It seems that the problem is that for
+each piece of redundancy we add to the message, we introduce more errors, and so as we increase
+redundancy we would get decreasing returns on improved error rate.
+
+Claude Shannon proved mathematically that this intuition is incorrect, and that there exists a
+method of adding redundancy to our message such that if we add a $H$ rate of redundancy we can
+remove all errors from the message. The correct bound on the possible error rate is show in Figure
+\ref{fig:shannons_proof}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.48]{04_exchange_transactions_and_errors/png/shannons_proof}
+\caption{Shannons Theorem of Noisy Channels}
+\label{fig:shannons_proof}
+\end{figure}
+
+The value $H$ indicates the extra length required of a message so as to compensate for all messages.
+It is determined by the probabilistic properties of the sent messages. We look into this in more
+details in \ref{appendix:information_theory}.
+
+\subsection{Aggregate Supply and Demand}
+
+In \ref{section:supply_and_demand} we presented a simple dynamic model of aggregate supply and
+demand. For any engineering system we must handle the effects of errors or noise on the system. In
+this section we will look at the effects of an error rate that reduces the per period aggregate
+agreements of an economy to the actual transactions that eventuate in that period.
+
 
 \subsection{Conclusion}
 
@@ -39,3 +76,4 @@ light on David Hume's problem. His question was why changing units of price shou
 real quantities. We have now come, at least part-way to solving this problem. However, as we
 introduce more kinds of transactions into our system, we will find more challenges to the design of
 a currency that will result in sustained and stable market equilibriation.  
+

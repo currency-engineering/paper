@@ -7,7 +7,7 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg5"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
    sodipodi:docname="contract_transaction.svg"
    inkscape:export-filename="/home/eric/currency.engineering/book/01_introduction/png/contract_transaction.png"
    inkscape:export-xdpi="192"
@@ -28,15 +28,17 @@
      showgrid="true"
      showguides="false"
      inkscape:zoom="1.7514169"
-     inkscape:cx="396.82156"
-     inkscape:cy="561.25984"
-     inkscape:window-width="3637"
-     inkscape:window-height="2124"
+     inkscape:cx="396.82157"
+     inkscape:cy="561.25986"
+     inkscape:window-width="3454"
+     inkscape:window-height="2128"
      inkscape:window-x="0"
      inkscape:window-y="30"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
-     inkscape:snap-global="true">
+     inkscape:snap-global="true"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1">
     <inkscape:grid
        type="xygrid"
        id="grid938"
@@ -623,17 +625,17 @@
          id="tspan16191"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
          x="5.2515545"
-         y="177.53383">t</tspan></text>
+         y="177.53383">time</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
-       x="7.1200953"
+       x="16.764669"
        y="179.57784"
        id="text16197"><tspan
          sodipodi:role="line"
          id="tspan16195"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
-         x="7.1200953"
+         x="16.764669"
          y="179.57784">0</tspan></text>
     <text
        xml:space="preserve"
@@ -645,17 +647,17 @@
          id="tspan16199"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
          x="5.1499214"
-         y="209.70004">t</tspan></text>
+         y="209.70004">time</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
-       x="7.0184622"
+       x="16.142374"
        y="211.74405"
        id="text16205"><tspan
          sodipodi:role="line"
          id="tspan16203"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
-         x="7.0184622"
+         x="16.142374"
          y="211.74405">1</tspan></text>
     <text
        xml:space="preserve"
@@ -667,17 +669,17 @@
          id="tspan16207"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
          x="5.8533397"
-         y="241.93843">t</tspan></text>
+         y="241.93843">time</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
-       x="7.7218804"
+       x="16.828329"
        y="243.98244"
        id="text16213"><tspan
          sodipodi:role="line"
          id="tspan16211"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
-         x="7.7218804"
+         x="16.828329"
          y="243.98244">2</tspan></text>
   </g>
 </svg>
