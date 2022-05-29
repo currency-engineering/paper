@@ -9,7 +9,7 @@
    id="svg5"
    inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
    sodipodi:docname="shannons_proof.svg"
-   inkscape:export-filename="../png/error_intuition.png"
+   inkscape:export-filename="../png/shannons_proof.png"
    inkscape:export-xdpi="192"
    inkscape:export-ydpi="192"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -142,7 +142,10 @@
        style="font-size:7.05556px;line-height:0.95;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
        x="20.746851"
        y="129.08844"
-       id="text1400"><tspan
+       id="text1400"
+       inkscape:export-filename="../png/shannons_proof.png.png"
+       inkscape:export-xdpi="192"
+       inkscape:export-ydpi="192"><tspan
          sodipodi:role="line"
          id="tspan1398"
          style="font-size:7.05556px;stroke-width:0.264583"

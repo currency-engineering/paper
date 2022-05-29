@@ -47,7 +47,7 @@ remove all errors from the message. The correct bound on the possible error rate
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.48]{04_exchange_transactions_and_errors/png/shannons_proof}
-\caption{Shannons Theorem of Noisy Channels}
+\caption{Shannon's Theorem of Noisy Channels}
 \label{fig:shannons_proof}
 \end{figure}
 
@@ -57,10 +57,32 @@ details in \ref{appendix:information_theory}.
 
 \subsection{Aggregate Supply and Demand}
 
-In \ref{section:supply_and_demand} we presented a simple dynamic model of aggregate supply and
+In Section \ref{section:aggregate_supply_and_demand} we presented a simple dynamic model of aggregate supply and
 demand. For any engineering system we must handle the effects of errors or noise on the system. In
 this section we will look at the effects of an error rate that reduces the per period aggregate
 agreements of an economy to the actual transactions that eventuate in that period.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.48]{04_exchange_transactions_and_errors/png/agreements}
+\caption{Agreements as a function of aggregate supply and demand}
+\label{fig:agreements}
+\end{figure}
+
+Agreements occur when both sellers and buyers want to transact and so agreements are the minimum of
+aggregate supply and aggregate demand as shown in Figure \ref{fig:agreements}. We now consider what
+happens if an error rate reduces the level of agreements to actual transactions.
+
+What is aggregate supply, aggregate demand, agreements and error rates in practical terms? Do we
+have a definition that is sufficiently precise so that we can identify these properties in daily
+economic transactions? Looking at a digital currency we can identify transactions with complete
+accuracy. They can be identified by a transfer of a number from one account to another. These
+transactions must have been component of the aggregate demand and aggregate supply, or they would
+not have occurred. But what about the extra `potential' transactions that make up the remainder of
+aggregate supply and demand?  These transactions exist only in people's heads, and as such are not a
+sufficiently concrete property to base any engineering theory on.
+
+
 
 
 \subsection{Conclusion}

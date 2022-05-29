@@ -47,6 +47,13 @@ exchange transactions.
 \label{fig:exchange_only_feedback_schema1}
 \end{figure}
 
+This diagram represents the global behavior of the system, which is the result of the aggregate
+effects of local behaviour. An obvious example, is that market behaviour at the global level is the
+result of a distributed system of many people interacting with each other in the context of markets.
+This is represented as the ``Market Activity'' box. Another example is that the ``Exchange Tx.'' box
+represents aggregate effects of all exchange transactions. We need a way to aggregate from
+individual transactions to sum variables that summarize their global, macro-level properties.
+
 \subsection{Price and Quantity}
 
 Starting with exchange transactions
@@ -187,7 +194,26 @@ time. In section (\ref{section:time_transactions}) we show that the price unit w
 contracts must be constant over time. To isolate these different units and construct a control
 system that has sufficient degrees of freedom required for control, the use of indices is useful.
 
+\subsection{Aggregate Supply and Demand}
+\label{section:aggregate_supply_and_demand}
+
+
+
+
+
+[TODO: Present plausible argument that we need to explain this assymetry.]
+
+\subsection{Market Symmetry}
+
 \subsection{Control of Price Level}
+
+In Section \ref{section:aggregate_supply_and_demand} we briefly introduced the idea that we could model
+macro-level market equilibriation as a feedback regulator, that feeds back excess aggregate supply
+and excess aggregate demand back into the price and quantity adjustment process that people engage
+in when interacting with others in the context of markets. 
+
+Another important regulation process is the control of the inflation rate through control of
+aggregate demand.
 
 Before examining exchange transactions, we will briefly consider the feedback control mechanism.
 Indexation is an important method for controlling distributed systems like a currency. An index is a
@@ -216,4 +242,3 @@ conditions problematic. Its effectiveness is also determined by financial instit
 willingness to respond to decreases or increases in the monetary authority's core lending rate in a
 way the maps to increases or decreases in aggregate demand.
 
-\subsection{Market Symmetry}
