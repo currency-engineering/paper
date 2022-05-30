@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   sodipodi:docname="error_bound.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="true"
+     showguides="false"
+     inkscape:zoom="2.6003435"
+     inkscape:cx="350.33833"
+     inkscape:cy="482.62855"
+     inkscape:window-width="2878"
+     inkscape:window-height="2128"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:snap-global="false"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid938"
+       spacingx="2.6458333"
+       spacingy="2.6458333" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="TriangleOutL"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutL"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path1192" />
+    </marker>
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1048"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect41"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1112"
+       transform="translate(1.5490107,-1.2303608)">
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+         x="9.5581512"
+         y="38.169128"
+         id="text1049"><tspan
+           sodipodi:role="line"
+           id="tspan1047"
+           style="font-size:8.46667px;stroke-width:0.264583"
+           x="9.5581512"
+           y="38.169128">ΔF</tspan></text>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.4;stroke-miterlimit:2;stroke-dasharray:none"
+         d="M 8.2163248,39.785359 H 21.44549"
+         id="path1051" />
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+         x="12.832232"
+         y="46.994873"
+         id="text1055"><tspan
+           sodipodi:role="line"
+           id="tspan1053"
+           style="font-size:8.46667px;stroke-width:0.264583"
+           x="12.832232"
+           y="46.994873">F</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-miterlimit:2"
+       d="m 26.458333,39.6875 v 145.52083 l 68.791666,0"
+       id="path196"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="97.895836"
+       y="187.85417"
+       id="text1027"><tspan
+         sodipodi:role="line"
+         id="tspan1025"
+         style="stroke-width:0.264583"
+         x="97.895836"
+         y="187.85417">U</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="77.982864"
+       y="192.96471"
+       id="text1031"><tspan
+         sodipodi:role="line"
+         id="tspan1029"
+         style="stroke-width:0.264583"
+         x="77.982864"
+         y="192.96471">e</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="91.534286"
+       y="169.95969"
+       id="text1035"><tspan
+         sodipodi:role="line"
+         id="tspan1033"
+         style="stroke-width:0.264583"
+         x="91.534286"
+         y="169.95969">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="34.600437"
+       y="68.791664"
+       id="text1039"><tspan
+         sodipodi:role="line"
+         id="tspan1037"
+         style="stroke-width:0.264583"
+         x="34.600437"
+         y="68.791664">D</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-miterlimit:2"
+       d="M 79.374999,185.20833 26.458333,89.958332"
+       id="path1041" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="16.160332"
+       y="92.604164"
+       id="text1045"><tspan
+         sodipodi:role="line"
+         id="tspan1043"
+         style="stroke-width:0.264583"
+         x="16.160332"
+         y="92.604164">H</tspan></text>
+    <path
+       style="fill:#e6e6e6;stroke:#000000;stroke-width:0.4;stroke-miterlimit:2;stroke-dasharray:none;fill-opacity:1"
+       d="m 26.458333,89.95833 52.916666,95.25 H 26.458333 Z"
+       id="path1114" />
+  </g>
+</svg>
