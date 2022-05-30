@@ -189,21 +189,91 @@ changes, whatever its distribution, the relation $F=PQ$ is exact.
 This section has involved various manipulations of units, most critically the ratio of dollar
 payments to a quantity of some good or service of a collection of different quantities of goods and
 services. Throughout the paper we will see that questions of units are important. Section
-(\ref{section:exchange_transactions_and_errors}) will show that the price unit must change over
-time. In section (\ref{section:time_transactions}) we show that the price unit written into
+\ref{section:exchange_transactions_and_errors}. will show that the price unit must change over
+time. In Section \ref{section:time_transactions}. we show that the price unit written into
 contracts must be constant over time. To isolate these different units and construct a control
 system that has sufficient degrees of freedom required for control, the use of indices is useful.
 
 \subsection{Aggregate Supply and Demand}
 \label{section:aggregate_supply_and_demand}
 
+We can now take a digital currency and measure aggregate properties $F$, $P$ and $Q$ from the set of
+transactions. We can also measure their relative change between two time periods.
+
+\[
+    \frac {\Delta F} F = \frac {\Delta P} P + \frac {\Delta Q} Q
+\]
+
+We'll denote the rate of change of the price level as the inflation rate $I$. We'll denote the rate
+of rate of $Q$ as the growth rate $G$, so
+
+\[
+    \frac {\Delta F} F = I + G
+\]
+
+At the micro-level equilibriation process for a market for a good or service is driven by excess
+demand and excess supply. The details of this process are the result of an aggregate of human
+decisions and is to a large-extent un-knowable, un-measurable and un-predictable. Nevertheless it is
+undeniable that such an equilibriation process exists, and we can abstract this process it a
+reaction of prices and quantities to excess supply and excess demand at the level of a market for a
+good or service. Excess supply and excess demand can be measures in $\$$, and all the micro-level
+values for excess supply and demand can be summed to get a value for aggregate demand $AD$ and
+aggregate supply $AS$.  
+
+While we can accurately measure transactions and calculate aggregate properties from these, the
+value of $AD$ and $AS$ are less concrete. We can't measure $AD$ directly but we can see its effects
+in that if there is no $AD$ or $AS$, then there is nothing to drive prices and quantities which will
+therefore remain constant. On the other hand, the unemployment rate is a good measure of excess
+$AS$. From $AD$ and $AS$ we can derive a set of agreements, which is the minimum of these two values
+(denominated in $\$$), and it is assumed that agreements maps directly to transactions.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.48]{03_exchange_transactions/png/agreements}
+\caption{Agreements as a function of aggregate supply and demand}
+\label{fig:agreements}
+\end{figure}
+
+Agreements occur when both sellers and buyers want to transact and so agreements are the minimum of
+aggregate supply and aggregate demand as shown in Figure \ref{fig:agreements}.
+
+\subsection{Market Feedback}  
+
+The use of supply and demand models of the decision making processes of economic participants in
+most useful in that it encapsulates the notion of markets being driven to equilibrium. We can
+capture the same notion by thinking of markets as feedback regulatiors. The value of this model of
+human behaviour is not that it is quanititively useful (no-one knows how to predict the decision
+making process of economic participants with any accuracy) but that it encapsulates the notion of an
+equilibriating process. This process is drive by excess supply and excess demand.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.48]{03_exchange_transactions/png/micro_feedback_schema}
+\caption{Model of a market for a good or service}
+\label{fig:micro_feedback}
+\end{figure}
+
+The aggregate equilibriation process is driven by the summation of the excess supplys and excess
+demands of the individual goods markets it constitutes. We can also model the aggregate
+equilibriation process as a feedback regulator.
+
+TODO: Figure
+
+In the rest of the paper, only assumption we make about market behaviour is that this simple model
+we have presented here is sufficiently accurate for our purposes to explain the behaviour of
+markets. Accepting this assumption we focus our attention of the way the design of a currency
+impacts on this model.
+
+\subsection{Aggregate Demand Feedback Model}
 
 
-
-
-[TODO: Present plausible argument that we need to explain this assymetry.]
 
 \subsection{Market Symmetry}
+
+The model of excess supply and excess demand driving markets to equilibrium is the foundation of
+economic theory. The model we have presented is symmetrical in that there is no difference between
+markets being driven to equilibrium as a result of excess demand or markets being drive to
+equilibrium as a result  
 
 \subsection{Control of Price Level}
 
