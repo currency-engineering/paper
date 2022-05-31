@@ -23,7 +23,7 @@ consider as beyond out control), the inflation rate $I$ and the growth rate $G$.
 inflation rate, but in general the growth rate is external to our control. We also showed that to
 achieve the goals of our currency requires a positive inflation rate. The unit in which we write
 prices is continuously changing. The unit used to denominate payments in contracts is generally this
-price unit. We show that this method of choosing interest rates is underspecified as discussed in
+price unit. We show that this method of choosing interest rates is undercontrollable as discussed in
 Section \ref{section:system_specification} such that under conditions of a positive rate of change
 in the inflation rate, i.e. when
 
@@ -33,20 +33,20 @@ in the inflation rate, i.e. when
 
 then either the real costs of borrowing must increase or the output $Q$ must decrease. Based on   
 Figure \ref{fig:ui_bound} this results in unemployment/inflation tracking that appears as indicated
-in Figure \ref{fig:underspecification_problem}.
+in Figure \ref{fig:uncontrollability_problem}.
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.48]{blank}
-\caption{Underspecification Tracking}
-\label{fig:underspecification_problem}
+\caption{Uncontrollability Tracking}
+\label{fig:uncontrollability_problem}
 \end{figure}
 
-Unspecification tracking occurs until the rate of change in the inflation rate drops to zero or
+Uncontrollability tracking occurs until the rate of change in the inflation rate drops to zero or
 becomes negative. The combination of the error bound and underspecification tracking leads to a
 fundamental control problem. To set conditions where aggregate equilibrium is possible, the
 inflation rate must be increased to region $D$ as shown in Figure \ref{fig:ui_bound}. As the
-inflation rate increases, underspecification tracking reduces the growth rate, increases the
+inflation rate increases, uncontrollability tracking reduces the growth rate, increases the
 unemployment rate. The solution to this problem is to correct the units in which contracts are
 written. If a unit of account of constant value is used, real interest rates can be trivially
 specified because the unit directly measures real payments and so fully specifies our control
@@ -56,7 +56,7 @@ destabilizing effects, the currency can be controlled to maintain aggregate equi
 of account of constant value is not used, it is not possible for a currency to maintain aggregate
 equilibrium.
 
-\subsection{Unspecification Problem}
+\subsection{Uncontrollability Problem}
 
 We showed in Section \ref{section:exchange_transactions_and_errors}. that the unit in which prices are
 denominated must be continuously changing.
@@ -94,7 +94,41 @@ illustrates that to maintain a market equilibriation set point we need a feedbac
 responds to deviations in the inflation rate from the set point.  Not only does the inflation rate
 $I$ changes, the rate of change of the  inflation rate $ \Delta I / I $ changes. This
 changes the requirement to control the real iterest rate from a single-variable control problem, to
-a two variable specification problem.
+a two variable specification problem. For every inflation rate $I$ there are many rates of change of
+the inflation rate $\Delta I/I$ that affect the real interest rate of a contract. This means that to
+correctly specify a real interest rate, two number are required, not one. This is a case where our
+control system is uncontrollable.
+
+Given that we only have one control, when two are required, we'll look at the effects of controlling
+the single control we do have.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.48]{05_time_transactions/png/r_control_space}
+\caption{Interest Rate Control Space}
+\label{fig:r_control_space}
+\end{figure}
+
+We are limited to control options along the horizontal axis. Suppose we are given an $r_0$ that
+controls for a given $I$ and where $\Delta I/I = 0$. And then supoose that the rate of change
+increases so that $\Delta I/I > 0$. The two possible options are to leave $i$ as it is, or to
+increase $i$.
+
+\underline{Case 1: No change to $i$}
+
+In this case the real interest rate facing lenders will decrease, causing some lender to reject
+a set of agreements that they would have previously accepted, resulting in decreases in
+$Q$ and a decrease in the growth rate $G$.
+
+\underline{Case 2: An increase in $i$} 
+
+Under these conditions the real costs facing borrowers will increase, causing some lenders to reject
+a set of agreement that they would have previously accepted, resulting in decreases in $Q$ and a
+decrease in the growth rate $G$.
+
+
+
+
 
 
 
