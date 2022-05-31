@@ -17,67 +17,85 @@
 \label{fig:exchange_and_time_transaction_schema1}
 \end{figure}
 
-\subsection{Interaction of Time Transactions and Exchange Transactions}
+In Section \ref{section:exchange_transactions_and_errors} we showed that there is a bound on the set of
+economic transactions that are possible, and that the error bound is determined by $H$ (which we can
+consider as beyond out control), the inflation rate $I$ and the growth rate $G$. We can control the
+inflation rate, but in general the growth rate is external to our control. We also showed that to
+achieve the goals of our currency requires a positive inflation rate. The unit in which we write
+prices is continuously changing. The unit used to denominate payments in contracts is generally this
+price unit. We show that this method of choosing interest rates is underspecified as discussed in
+Section \ref{section:system_specification} such that under conditions of a positive rate of change
+in the inflation rate, i.e. when
 
-\underline{Introduction}
+\[
+    \frac {\Delta I} I > 0
+\]
 
-\underline{Units}
+then either the real costs of borrowing must increase or the output $Q$ must decrease. Based on   
+Figure \ref{fig:ui_bound} this results in unemployment/inflation tracking that appears as indicated
+in Figure \ref{fig:underspecification_problem}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.48]{blank}
+\caption{Underspecification Tracking}
+\label{fig:underspecification_problem}
+\end{figure}
+
+Unspecification tracking occurs until the rate of change in the inflation rate drops to zero or
+becomes negative. The combination of the error bound and underspecification tracking leads to a
+fundamental control problem. To set conditions where aggregate equilibrium is possible, the
+inflation rate must be increased to region $D$ as shown in Figure \ref{fig:ui_bound}. As the
+inflation rate increases, underspecification tracking reduces the growth rate, increases the
+unemployment rate. The solution to this problem is to correct the units in which contracts are
+written. If a unit of account of constant value is used, real interest rates can be trivially
+specified because the unit directly measures real payments and so fully specifies our control
+problem. Given that a currency limits transactions to exchange transactions and time transactions,
+and that a unit of account of constant value is used, and given that there are no other unforseen
+destabilizing effects, the currency can be controlled to maintain aggregate equilibrium. If a unit
+of account of constant value is not used, it is not possible for a currency to maintain aggregate
+equilibrium.
+
+\subsection{Unspecification Problem}
+
+We showed in Section \ref{section:exchange_transactions_and_errors}. that the unit in which prices are
+denominated must be continuously changing.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.48]{05_time_transactions/png/time_transaction}
+\caption{Time Transactions}
+\label{fig:time_transaction_contracts}
+\end{figure}
+
+This unit is used in time transactions to denominate the initial lending of currency, to denominate
+the repayment, and it is also common practice to use it to specify the repayment in a contract.
+Because this unit in continuously changing, the value written into contracts must be written in such
+a way as to specify a real interest rate, i.e. an interest rate written in terms of purchasing
+power. Fisher \cite{fisher1907} notes that in order to specify a real interest rate $r$ then the
+value $i$ needs to be written into contracts, where
+
+\[
+    i = (1+r)(1+I)
+\]
+
+Whatever real interest rate $r$ lenders and borrows agree upon, its is possible to write the value
+$i$ into contracts to achieve this outcome. For a given principle $k$ the repayment of the principal
+is $k(1+I)$ and the repayment of interest on that principal is $k(1+I)(1+r)$, and so total the
+repayment of both principle and interest is
+
+\[
+     k(1+r)(1+I) = k(1+I) + k(1+I)(1+r)
+ \]
+
+From the left-hand side of this equation we can see that the payment denominated in the unit of
+currency increases at the same rate as the inflation rate. Figure \ref{fig:control_for_equil}.
+illustrates that to maintain a market equilibriation set point we need a feedback regulator that
+responds to deviations in the inflation rate from the set point.  Not only does the inflation rate
+$I$ changes, the rate of change of the  inflation rate $ \Delta I / I $ changes. This
+changes the requirement to control the real iterest rate from a single-variable control problem, to
+a two variable specification problem.
 
 
-
-
-\underline{Inflation Feedback}
-
-Increases in the inflation rate driven through exchange transactions has effects on time
-transactions. We demonstrate in section (\ref{section:exchange_transactions_and_errors}) we showed
-that an error rate limits the equilibriation process. We now show an interaction between time
-transactions and exchange transactions that has further effects the equilibriation process by
-driving down growth rates.
-
-This process generates a positive and unstable feedback loop between exchange transactions and time
-transactions. We will show how increases in the inflation rate cause increases in real interest
-rates, and by pushing up the costs of production, reduce the growth rates. As show in section
-(\ref{section:exchange_transactions_and_errors}) this will either increase the inflation rate,
-increasing the effect of the positive feedback process, or increase the unemployment rate. The
-positive feedback loop is broken only when increases in the inflation rate cease.  
-
-\underline{The feedback process}
-
-In Chapter V (pages 77-   ) of his 1907 work \textit{The Rate of Interest} Irving Fisher examines an
-adjustment that economic participants must make to nominal interest rates if they are to maintain
-real interest rates at a certain fixed rate, under inflationary conditions.
-
-If we have a time-transaction that occurs at a time when the borrower and lender expect not change
-in the price-level, and the borrowser and lender agree on a real interest rate of $i$ percent, then
-a repayment of the priniciple $k$ will be repaid together with an interest payment of $ki$, making a
-total repayment of $k(1+i)$.
-
-If the lender and borrow want to carry out the same transaction in times when the borrower and
-lender expected the price level to increase by $I$ percent by the time the repayment was due, then
-the borrower and lender could carry out the same transaction, by repaying principle at $k(1+I)$ with
-an interest payment of $ki(1+I)$, making a total repayment of $k(1+i)(1+I)$.
-
-Regardless of which or these two circumstances is the case, the payments are the same if we adjust
-for changes in the price level.
-
- 
-
-
-
-
-
-If $k$ units of currency is lent at a time time when the inflation rate
-
-If $k$ units of currency are lent at a time where the price level is $p_0$ and buyers expect that at
-the time of repayment the price level will have rise $I$ percent, then
-
-
-
-
-
-
-
-This is a process which in addition together with the effect of an error rate on market equilibrium
-accounts for most of the effects of currency on market stability equilibrium and stability.
 
 
