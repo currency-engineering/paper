@@ -52,7 +52,7 @@
        orient="auto-start-reverse"
        inkscape:stockid="RoundedArrow"
        markerWidth="10"
-       markerHeight="9.66704848"
+       markerHeight="9.6670485"
        viewBox="0 0 6.1347524 5.9304951"
        inkscape:isstock="true"
        inkscape:collect="always"
@@ -72,7 +72,7 @@
        inkscape:stockid="TriangleOutL"
        inkscape:isstock="true"
        viewBox="0 0 8.519053 9.8486161"
-       markerWidth="10.00026453"
+       markerWidth="10.000264"
        markerHeight="11.561"
        preserveAspectRatio="xMidYMid">
       <path
@@ -113,7 +113,7 @@
        transform="translate(1.5490107,-1.2303608)" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.2;stroke-miterlimit:2"
-       d="m 26.458333,53.433832 0,131.774498 h 89.958337"
+       d="M 44.979166,53.433832 V 185.20833 H 134.9375"
        id="path196"
        sodipodi:nodetypes="ccc"
        inkscape:export-filename="../png/control_problem.png"
@@ -122,13 +122,13 @@
     <text
        xml:space="preserve"
        style="font-size:11.2889px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
-       x="120.03787"
+       x="138.5587"
        y="188.96593"
        id="text1027"><tspan
          sodipodi:role="line"
          id="tspan1025"
          style="stroke-width:0.264583"
-         x="120.03787"
+         x="138.5587"
          y="188.96593">U</tspan></text>
     <text
        xml:space="preserve"
@@ -154,7 +154,7 @@
          y="68.791664" /></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.2;stroke-miterlimit:2"
-       d="M 79.374999,185.20833 26.458333,89.958332"
+       d="M 97.895832,185.20833 44.979166,89.958332"
        id="path1041" />
     <text
        xml:space="preserve"
@@ -169,7 +169,7 @@
          y="92.604164" /></text>
     <g
        id="g537"
-       transform="translate(0.49094721,-3.1833114)">
+       transform="translate(19.01178,-3.1833114)">
       <text
          xml:space="preserve"
          style="font-size:7.05556px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
@@ -185,17 +185,17 @@
     <text
        xml:space="preserve"
        style="font-size:11.2889px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
-       x="17.762434"
+       x="36.283268"
        y="54.174713"
        id="text615"><tspan
          sodipodi:role="line"
          id="tspan613"
          style="stroke-width:0.264583"
-         x="17.762434"
+         x="36.283268"
          y="54.174713">I</tspan></text>
     <path
        style="fill:#e6e6e6;stroke:#000000;stroke-width:0.2;stroke-miterlimit:2"
-       d="m 26.458333,89.95833 52.916666,95.25 H 26.458333 Z"
+       d="m 44.979166,89.95833 52.916666,95.25 H 44.979166 Z"
        id="path383" />
   </g>
   <g
@@ -203,36 +203,36 @@
      id="layer2"
      inkscape:label="above">
     <circle
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-miterlimit:2;stroke-dasharray:none;opacity:1"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-miterlimit:2;stroke-dasharray:none"
        id="path542"
-       cx="26.458334"
+       cx="44.979168"
        cy="68.791664"
        r="2.6458333" />
     <text
        xml:space="preserve"
        style="font-size:7.05556px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
-       x="30.72426"
+       x="49.245094"
        y="70.344971"
        id="text1247"><tspan
          sodipodi:role="line"
          id="tspan1245"
          style="font-size:7.05556px;stroke-width:0.264583"
-         x="30.72426"
+         x="49.245094"
          y="70.344971">set point</tspan></text>
     <path
        style="opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-miterlimit:2;stroke-dasharray:none;marker-start:url(#RoundedArrow);marker-end:url(#TriangleOutL)"
-       d="M 18.520833,92.604166 V 145.52083"
+       d="M 37.041666,92.604166 V 145.52083"
        id="path1371" />
     <text
        xml:space="preserve"
        style="font-size:7.05556px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
-       x="7.7611108"
+       x="26.281944"
        y="121.63778"
        id="text2009"><tspan
          sodipodi:role="line"
          id="tspan2007"
          style="font-size:7.05556px;stroke-width:0.264583"
-         x="7.7611108"
+         x="26.281944"
          y="121.63778">control</tspan></text>
   </g>
 </svg>
