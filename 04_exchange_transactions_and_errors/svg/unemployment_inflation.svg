@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   sodipodi:docname="unemployment_inflation.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="true"
+     showguides="false"
+     inkscape:zoom="2.6003435"
+     inkscape:cx="298.99896"
+     inkscape:cy="482.62855"
+     inkscape:window-width="3454"
+     inkscape:window-height="2128"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:snap-global="false"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid938"
+       spacingx="2.6458333"
+       spacingy="2.6458333" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="TriangleOutL"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutL"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path1192" />
+    </marker>
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1048"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect41"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1112"
+       transform="translate(1.5490107,-1.2303608)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-miterlimit:2"
+       d="m 26.458333,53.433832 0,131.774498 h 89.958337"
+       id="path196"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="../png/unemployment_and_inflation.png"
+       inkscape:export-xdpi="192"
+       inkscape:export-ydpi="192" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="120.03787"
+       y="188.96593"
+       id="text1027"><tspan
+         sodipodi:role="line"
+         id="tspan1025"
+         style="stroke-width:0.264583"
+         x="120.03787"
+         y="188.96593">U</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="77.982864"
+       y="192.96471"
+       id="text1031"><tspan
+         sodipodi:role="line"
+         id="tspan1029"
+         style="stroke-width:0.264583"
+         x="77.982864"
+         y="192.96471" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="34.600437"
+       y="68.791664"
+       id="text1039"><tspan
+         sodipodi:role="line"
+         id="tspan1037"
+         style="stroke-width:0.264583"
+         x="34.600437"
+         y="68.791664" /></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-miterlimit:2"
+       d="M 79.374999,185.20833 26.458333,89.958332"
+       id="path1041" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="16.160332"
+       y="92.604164"
+       id="text1045"><tspan
+         sodipodi:role="line"
+         id="tspan1043"
+         style="stroke-width:0.264583"
+         x="16.160332"
+         y="92.604164" /></text>
+    <g
+       id="g527"
+       transform="translate(-13.018853,-4.2481918)">
+      <text
+         xml:space="preserve"
+         style="font-size:7.05556px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+         x="76.518852"
+         y="197.01685"
+         id="text517"><tspan
+           sodipodi:role="line"
+           id="tspan515"
+           x="76.518852"
+           y="197.01685"
+           style="font-size:7.05556px;stroke-width:0.264583">G</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:4.23333px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+         x="81.529884"
+         y="198.97498"
+         id="text521"><tspan
+           sodipodi:role="line"
+           id="tspan519"
+           x="81.529884"
+           y="198.97498"
+           style="font-size:4.23333px;stroke-width:0.264583">0</tspan></text>
+    </g>
+    <g
+       id="g537"
+       transform="translate(0.49094721,-3.1833114)">
+      <text
+         xml:space="preserve"
+         style="font-size:7.05556px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+         x="76.777153"
+         y="195.95197"
+         id="text531"><tspan
+           sodipodi:role="line"
+           id="tspan529"
+           x="76.777153"
+           y="195.95197"
+           style="font-size:7.05556px;stroke-width:0.264583">G</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:4.23333px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+         x="81.788185"
+         y="197.9101"
+         id="text535"><tspan
+           sodipodi:role="line"
+           id="tspan533"
+           x="81.788185"
+           y="197.9101"
+           style="font-size:4.23333px;stroke-width:0.264583">1</tspan></text>
+      <g
+         id="g551"
+         transform="translate(-39.295702,-4.8405558)">
+        <text
+           xml:space="preserve"
+           style="font-size:7.05556px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+           x="128.9268"
+           y="201.03441"
+           id="text541"><tspan
+             sodipodi:role="line"
+             id="tspan539"
+             x="128.9268"
+             y="201.03441"
+             style="font-size:7.05556px;stroke-width:0.264583">G</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:4.23333px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+           x="133.9863"
+           y="202.44383"
+           id="text545"><tspan
+             sodipodi:role="line"
+             id="tspan543"
+             x="133.9863"
+             y="202.44383"
+             style="font-size:4.23333px;stroke-width:0.264583">2</tspan></text>
+      </g>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-miterlimit:2"
+       d="M 92.797111,185.20833 26.458333,66.038403"
+       id="path553"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#e6e6e6;stroke:#000000;stroke-width:0.2;stroke-miterlimit:2"
+       d="m 26.458333,115.49325 38.730602,69.71508"
+       id="path611" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="17.762434"
+       y="54.174713"
+       id="text615"><tspan
+         sodipodi:role="line"
+         id="tspan613"
+         style="stroke-width:0.264583"
+         x="17.762434"
+         y="54.174713">I</tspan></text>
+    <path
+       style="fill:#e6e6e6;stroke:#000000;stroke-width:0.2;stroke-miterlimit:2"
+       d="m 26.458333,115.49325 38.730602,69.71508 H 26.458333 Z"
+       id="path617" />
+  </g>
+</svg>
