@@ -1,6 +1,16 @@
 \section{Implementation}
 \label{section:implementation}
 
+A useful abstraction or tool for working designing an implementation is the computer science
+abstraction of safety and liveness used for the design of concurrent and distributed systems
+\cite{lamport1977}. Lamport's core notion is that it is useful to categorize the implementation of
+systems into two different classes of requirements: liveness and safety, that require differ forms
+of reasoning about. Liveness requirements are those properties that must exist in our design if we
+want to achieve our goals. Safety properties are those with wish to not have in our system if we
+wish to achieve our goals. But before we look at these we need to make our goals explicit.  
+
+\subsection{Goals}
+
 \underline{Abstraction Layer over Accounts}
 
 To implement a currency design that does not constrain 
@@ -21,6 +31,16 @@ We specify the macro-level requirements as
 Simple accounts that hold a number with some control of the aggregate value in all accounts is the
 digital equivalent of paper money. This design is insufficiently controlled to achieve our two
 macro-level requirements.   
+
+
+\subsection{Liveness}
+
+
+\subsection{Safety}
+
+
+
+TODO
 
 To achieve these outcomes we apply a abstraction layer over these accounts. This abstraction layer
 does the following:
