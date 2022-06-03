@@ -47,16 +47,7 @@ exchange transactions.
 \label{fig:exchange_only_feedback_schema1}
 \end{figure}
 
-This diagram represents the global behavior of the system, which is the result of the aggregate
-effects of local behaviour. An obvious example, is that market behaviour at the global level is the
-result of a distributed system of many people interacting with each other in the context of markets.
-This is represented as the ``Market Activity'' box. Another example is that the ``Exchange Tx.'' box
-represents aggregate effects of all exchange transactions. We need a way to aggregate from
-individual transactions to sum variables that summarize their global, macro-level properties.
-
 \subsection{Price and Quantity}
-
-Starting with exchange transactions
 
 \begin{figure}[H]
 \centering
@@ -65,83 +56,64 @@ Starting with exchange transactions
 \label{fig:exchange_transaction2}
 \end{figure}
 
-we want to construct some aggregate variables. These aggregate variables could be sums, averages or
-some other kind of measures of centrality. We'll categorize exchange transactions into different
-``goods categories''. We'll use this term rather than say ``goods and services'' for brevity and
-because it more closely reflects our requirements. We'll assume at this point that these goods
-categories are sufficiently well-defined and precise as not to introduce too much noise into our
-aggregate measures. For a given currency at a given period of time the transactions, we sum the
-quantities for each goods category.
+Exchange transactions can be quantified as a payment $p$ denominated in dollars in exchange for
+quantity $q$ denominated in units specific to that good or service.
 
-\[
-    \left( q_1, \dots, q_N \right)
-\]
+We want to construct some aggregate variables from $p$ and $q$.
 
-and then let $pi$ be the average price of these transactions for a given good category. Let $N$ be
-the total number of different goods categories. We'll denote the units for these values as
+We'll use the term \textit{goods category} to refer to a particular kind of good or service as this
+term more closely reflects the idea that the categories can be redefine at various levels of
+specificity or generality.
 
-\[
-    \left( \left[ q_1 \right], \dots, \left[ q_N \right] \right)
-\]
+Using a discrete time model, for each time period we will sum all the quantities of a given goods
+category $i$ so that we have a set of $q_i$s, and collect these into a vector $\overline Q$. We'll
+let $N$ be the total number of different goods categories.
 
-We'll denote the average price for each $q_i$.
+\begin{equation}
+    \overline Q = \left( q_1, \dots, q_N \right)
+\end{equation}
 
-\[
-    \left( p_1, \dots, p_N \right)
-\]
+The units for each $q_i$ can be different. We will denote a unit by enclosing it in square brackets,
+so that the units corresponding to each $q_i$ are
 
-The units for the average prices are 
+\[ \left( \left[ q_1 \right], \dots, \left[ q_N \right] \right) \]
 
-\[
-    \left( \left[ \frac {\$} {p_1} \right], \dots, \left[ \frac {\$} {p_N} \right]  \right)
-\]
+The average price $pi$ can be calculated by dividing total spending on goods category $i$ by $q_i$
+and collecting them into a vector $\overline P$.
+
+\begin{equation}
+    \overline P = \left( p_1, \dots, p_N \right)
+\end{equation}
+
+The corresponding units for $p_i$ are
+
+\[ \left( \left[ \frac {\$} {p_1} \right], \dots, \left[ \frac {\$} {p_N} \right] \right) \]
 
 We cannot sum either these prices or quantities because they can have different units. But each
-payment $p_i q_i$ can be summed because its unit, using dimensional analysis, is
+payment $p_i q_i$ can be summed because its unit using dimensional analysis is
 
-\[
-    \left[ \frac {\$} {q_i} \right] \left[ q_i \right] = \left[ \$ \right]
-\]
+\[ \left[ \frac {\$} {q_i} \right] \left[ q_i \right] = \left[ \$ \right] \]
 
-So for a given time period, total payments for transactions for a currency is 
+so we will let total payments $F$, denoted in dollars, be
 
-\[
-    F = p_i q_i + \dots + p_N q_N
-\]
+\[ F = p_i q_i + \dots + p_N q_N \]
 
-We want to construct a aggregate measure of prices. As will become clear later in the paper we want
-a measure $P$ that can be used to isolate purchasing power from the inflation rate. For example, if
-a person has a certain amount of currency in their account at time $t=0$, and that they can buy a
-certain amount with this currency, we want to know how much money they must have in their account at
-time $t=1$ so that they can buy the same amount. As written, the notion of ``price level'',
-``purchasing power'' and ``amount'' are vague and require mathematical treatment.
+What do we require of an aggregate measure of the price level? As will become clear later in the
+paper (\ref{sec:constant_purchasing_power}) we require a measure of the price level $P$ that can be
+used to accurately index purchasing power of a given dollar value across time. To make this more
+precise consider Alice who, when she receives a dollar, purchases goods randomly selected in such a
+way that in the limit, after many purchases, the distribution of her purchases is in proportion to
+total transactions $\overline Q$ at that time. Suppose the price level at $t=0$ is $P_0$ and the
+price level at $t=1$ is $P_1$. We want a measure of price level such that if Alice spends $1$ dollar
+at $t=0$ and $P_1 / P_0$ dollars at $t=1$, then her expected value, $\varepsilon_1$, of purchases as
+a proportion of $\overline Q_1$ should be equal to the expected value, $\varepsilon_0$, of her
+purchases as a proportion of $\overline Q_0$. In other words, we want
 
-Suppose at a given time the transactions with quantites
+\begin{equation}
+    \frac {P_0 \overline \varepsilon_0} {\overline Q_0} = \frac {P_1 \overline \varepsilon_1} {\overline Q_1}
+\end{equation}
 
-\[
-    \overline Q = \left( q_1, \dots, q_N \right) \textrm{ with corresponding prices } \left( p_1, \dots, p_N \right)
-\]
-
-occurs. We'll introduce Alice. We'll feed Alice a 1 dollar and Alice will spend this 1 dollar by
-randomly selecting goods categories in such a way that in the limit they purchase quantities all in
-proportion to total transactions. In other words,
-
-\[
-    \varepsilon_{q_1,\dots,q_n} = c_1 \overline Q
-\]
-
-where $c_1$ is a number between $0$ and $1$ and $\varepsilon_{q_1,\dots,q_n}$ is the expected value of
-the ``abstract person'''s purchases. The $c_1$ represents the purchasing power of the Alice. It
-represents the proportion of all transactions over which Alice has the power to purchase, per
-dollar. While purchasing power is the amount of goods that will buy a given unit of currency, the
-price level is its reciprocal, the amount of currency that will buy a unit of quantity.
-
-We need to make things more precise, and to check that our measure of price can be used as an index
-to isolate Alice's purchasing power from changes in the inflation rate. The motivate for this will
-become clear later in the paper.
-
-First we'll do a static analysis, and try to construct meaningful measures of aggregate price and
-quantity for a time period that has 
+We will now build a measure of price, and later check that it agrees with this condition. We have
 
 \[
     \overline Q = \left( q_1, \dots, q_N \right) \textrm{ with corresponding prices } \left( p_1, \dots, p_N \right)
