@@ -69,7 +69,7 @@ Using a discrete time model, for each time period we will sum all the quantities
 category $i$ so that we have a set of $q_i$s, and collect these into a vector $\overline Q$. We'll
 let $N$ be the total number of different goods categories.
 
-\begin{equation}
+\begin{equation} \label{eq:qbar}
     \overline Q = \left( q_1, \dots, q_N \right)
 \end{equation}
 
@@ -81,7 +81,7 @@ so that the units corresponding to each $q_i$ are
 The average price $pi$ can be calculated by dividing total spending on goods category $i$ by $q_i$
 and collecting them into a vector $\overline P$.
 
-\begin{equation}
+\begin{equation} \label{eq:pbar}
     \overline P = \left( p_1, \dots, p_N \right)
 \end{equation}
 
@@ -105,25 +105,21 @@ precise consider Alice who, when she receives a dollar, purchases goods randomly
 way that in the limit, after many purchases, the distribution of her purchases is in proportion to
 total transactions $\overline Q$ at that time. Suppose the price level at $t=0$ is $P_0$ and the
 price level at $t=1$ is $P_1$. We want a measure of price level such that if Alice spends $1$ dollar
-at $t=0$ and $P_1 / P_0$ dollars at $t=1$, then her expected value, $\varepsilon_1$, of purchases as
+at $t=0$ and $P_1 / P_0$ dollars at $t=1$, then her expected value, $\varepsilon_1$, of her purchases as
 a proportion of $\overline Q_1$ should be equal to the expected value, $\varepsilon_0$, of her
 purchases as a proportion of $\overline Q_0$. In other words, we want
 
-\begin{equation}
+\begin{equation} \label{eq:p_requirement}
     \frac {P_0 \overline \varepsilon_0} {\overline Q_0} = \frac {P_1 \overline \varepsilon_1} {\overline Q_1}
 \end{equation}
 
-We will now build a measure of price, and later check that it agrees with this condition. We have
-
-\[
-    \overline Q = \left( q_1, \dots, q_N \right) \textrm{ with corresponding prices } \left( p_1, \dots, p_N \right)
-\]
-
-Here, the vector $\overline Q$ represents a collection of values, but we want to construct a single
-value that is a aggregate of these values. The problem is that each of these values may have
-different units. We can construct units that such as ``one apple and two oranges''. The problem is
-that if we do this it is impossible to express ``two apples and two oranges'' in these units. But if
-we consider only a single period of time that has $\overline Q$ transactions, then we can express
+We will now build a measure of price from equations (\ref{eq:pbar}) and (\ref{eq:qbar}) and later
+check that it agrees with equation (\ref{eq:p_requirement}). The vector $\overline Q$ represents a
+collection of values, but we want to construct a single value that is a aggregate of these values.
+The problem is that each of these values may have different units. We can construct units that such
+as ``one apple and two oranges'' but this limits to what we can measure in these units. We can
+measure ``two apples and four oranges`` but we cannot measure ``two apples and two oranges''. If we
+consider only a single period of time that has $\overline Q$ transactions, then we can express
 this value in any unit of the form
 
 \begin{equation}\label{equation:basket}
@@ -135,24 +131,28 @@ express $\overline Q$. We refer to any one of these set of units as a ``basket o
 that we select one of these sets of units, we can then express $\overline Q$ as some number $Q$,
 where the units given by equation (\ref{equation:basket}) with a specific $\gamma$. The units of
 $Q$ is this basket of goods. Now we can set the price level as the payment for this basket of goods.
-This value $P$ is in units \$ per basket. And so
+This value $P$ is in units \$ per basket. And
 
-\[
-    F = PQ
-\]
+\begin{equation} \label{eq:fpq}
+   F = PQ
+\end{equation}
 
-The units used depends on the $\overline Q$ at a point in time. Of the proportion of $q_i$ changes
-we would have to use a different unit, and so we couldn't do any dynamic analysis (comparisions
-across time). We can solve this problem by further constraining our units. As noted, for any
-$\overline Q$ at any time we can construct a new unit. We further constrain this by setting the rule
-that given one basket of goods whose value of $\gamma$ is arbitrarily chosen, we constrain all other
-baskets of goods, by setting their $\gamma$ to a value such that all baskets of goods have the same  
-average of quantities weighted by their share of trade.
+The units used depends on the $\overline Q$ at a point in time. If the proportion of $q_i$ changes
+we would have to use a different unit, and so cannot make comparisons across time. We can solve this
+problem by making use of our last degree of freedom to further constraining our units. We do set by
+setting the rule that the proportion of $\gamma_1$ to $\gamma_0$ is equal to the ratio of
+trade-weighted averages at times $t=1$ and $t=0$. 
 
 \begin{equation}
-    \gamma' =  \gamma \frac {\varepsilon \left( \left[ q_1 \right], \dots, \left[ q_N \right] \right)}
+    \frac {\gamma_1} {\gamma_0} = \frac {\varepsilon \left( \left[ q_1 \right], \dots, \left[ q_N \right] \right)}
     {\varepsilon \left( \left[ {q_1}' \right], \dots, \left[ {q_N}' \right] \right)}
 \end{equation}
+
+where
+
+\[
+    \gamma = [q_1] \frac {f_1} F + \cdots + [q_N] \frac {f_N} F 
+\]
 
 Now, because $\gamma$ depends only the average of the units in the baskets of goods, the distribution of
 $q_i$ around this average becomes irrelevant. This means that \textit{however} $\overline Q$
@@ -166,39 +166,42 @@ time. In Section \ref{section:time_transactions}. we show that the price unit wr
 contracts must be constant over time. To isolate these different units and construct a control
 system that has sufficient degrees of freedom required for control, the use of indices is useful.
 
-\subsection{Aggregate Supply and Demand}
-\label{section:aggregate_supply_and_demand}
+\section{Aggregate Demand, Aggregate Supply and Agreements}
 
-We can now take a digital currency and measure aggregate properties $F$, $P$ and $Q$ from the set of
-transactions. We can also measure their relative change between two time periods.
+From equation (\ref{eq:fpq})
 
-\[
-    \frac {\Delta F} F = \frac {\Delta P} P + \frac {\Delta Q} Q
-\]
+\[ \frac {\Delta F} F = \frac {\Delta P} P + \frac {\Delta Q} Q \]
 
-We'll denote the rate of change of the price level as the inflation rate $I$. We'll denote the rate
-of rate of $Q$ as the growth rate $G$, so
+Denoting the rate of change of the price level as the inflation rate $I$ and the rate of $Q$ as the
+growth rate $G$ then
 
 \begin{equation}
     \label{equation:fig}
     \frac {\Delta F} F = I + G
-\end{equation}]
+\end{equation}
 
-At the micro-level equilibriation process for a market for a good or service is driven by excess
-demand and excess supply. The details of this process are the result of an aggregate of human
-decisions and is to a large-extent un-knowable, un-measurable and un-predictable. Nevertheless it is
-undeniable that such an equilibriation process exists, and we can abstract this process it a
-reaction of prices and quantities to excess supply and excess demand at the level of a market for a
-good or service. Excess supply and excess demand can be measures in $\$$, and all the micro-level
-values for excess supply and demand can be summed to get a value for aggregate demand $AD$ and
-aggregate supply $AS$.  
+Aggregate demand and aggregate demand are a set of transactions
 
-While we can accurately measure transactions and calculate aggregate properties from these, the
-value of $AD$ and $AS$ are less concrete. We can't measure $AD$ directly but we can see its effects
-in that if there is no $AD$ or $AS$, then there is nothing to drive prices and quantities which will
-therefore remain constant. On the other hand, the unemployment rate is a good measure of excess
-$AS$. From $AD$ and $AS$ we can derive a set of agreements, which is the minimum of these two values
-(denominated in $\$$), and it is assumed that agreements maps directly to transactions.
+\begin{equation}
+    \sum_i p_i q_i
+\end{equation}
+
+Aggregate supply, $AS$, is the set of transactions that people will agree to sell if aggregate
+demand is available. Aggregate demand and aggregate supply are neither well-defined or knowable
+quantities as they depend on what decisions people have made in their heads. We can only measure
+outomes of these variables such as $F$. The unemployment rate is a good measure of excess aggregate
+supply. We are interested in aggregate supply and demand only to the extent that we can control
+them. We may be able to control aggregate demand by changing the money supply. Historical experience
+indicates that at some times control is effective, and at other times control is less effective. The
+effectiveness of this control depends on the ability to control money supply, and the relationship
+between money supply and aggregate demand.  We assume that an increase in money supply will cause an
+increase in aggregate demand. We want to be able to control aggregate demand through a feedback
+regulator. That means that this relationship needs only to be sufficiently strong that it responds
+to a feedback controller. This feedback controller may be a monetary authority or an algorithm.
+Later in the paper we'll examine ways to improve this control mechanism. $AD$ and $AS$ we can derive
+a set of agreements, which are the common transactions in aggregate demand and supply are is the
+minimum of these two values (denominated in $\$$), and it is assumed that agreements maps directly
+to transactions.
 
 \begin{figure}[H]
 \centering
@@ -210,55 +213,13 @@ $AS$. From $AD$ and $AS$ we can derive a set of agreements, which is the minimum
 Agreements occur when both sellers and buyers want to transact and so agreements are the minimum of
 aggregate supply and aggregate demand as shown in Figure \ref{fig:agreements}.
 
-\subsection{Market Feedback}  
-\label{section:market_feedback}
-
-We build here the simplest model that we can think with sufficient explanatory power. The use of
-supply and demand models of the decision making processes of economic participants in most useful in
-that it encapsulates the notion of markets being driven to equilibrium. We can capture the same
-notion by thinking of markets as feedback regulatiors. The value of this model of human behaviour is
-not that it is quanititively useful (no-one knows how to predict the decision making process of
-economic participants with any accuracy) but that it encapsulates the notion of an equilibriating
-process. This process is drive by excess supply and excess demand.
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.48]{blank}
-\caption{Model of a market for a good or service}
-\label{fig:micro_feedback}
-\end{figure}
-
-The aggregate equilibriation process is driven by the summation of the excess supplys and excess
-demands of the individual goods markets it constitutes. We can also model the aggregate
-equilibriation process as a feedback regulator.
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.48]{blank}
-\caption{Model of excess aggregate demand/supply response}
-\label{fig:macro_feedback}
-\end{figure}
-
-In the rest of the paper, only assumption we make about market behaviour is that this simple model
-we have presented here is sufficiently accurate for our purposes to explain the behaviour of
-markets. Accepting this assumption we focus our attention of the way the design of a currency
-impacts on this model.
-
-\subsection{Aggregate Demand Feedback Model}
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.48]{blank}
-\caption{Feedback schema for the control of money supply}
-\label{fig:money_supply_feedback}
-\end{figure}
-
 \subsection{Market Symmetry}
 
-The model of excess supply and excess demand driving markets to equilibrium is the foundation of
-economic theory. The model we have presented is symmetrical in that there is no difference between
-markets being driven to equilibrium as a result of excess demand or markets being drive to
-equilibrium as a result  
+We assume that in aggregate economic participants drive prices and quantities in markets to an
+equilibrium where $AD = AS$. The model of excess supply and excess demand driving markets to
+equilibrium is the foundation of economic theory. The supply and demand model is symmetrical in that
+there is no difference between markets being driven to equilibrium as a result of excess demand or
+markets being drive to equilibrium as a result  
 
 \begin{figure}[H]
 \centering
