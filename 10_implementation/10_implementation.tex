@@ -1,134 +1,158 @@
 \section{Implementation}
-\label{section:implementation}
+\label{sec:implementation}
 
-A useful abstraction or tool for working designing an implementation is the computer science
-abstraction of safety and liveness used for the design of concurrent and distributed systems
-\cite{lamport1977}. Lamport's core notion is that it is useful to categorize the implementation of
-systems into two different classes of requirements: liveness and safety, that require differ forms
-of reasoning about. Liveness requirements are those properties that must exist in our design if we
-want to achieve our goals. Safety properties are those with wish to not have in our system if we
-wish to achieve our goals. But before we look at these we need to make our goals explicit.  
+\subsection{Demand Indexation}
 
-\subsection{Goals}
+The demand index is a value published by a monetary authority or an algorithm. It directly adjusts
+the total money supply by indexing all account values. Accounts exist as a base value. The values
+appearing in called face values. The face value is a multiple of the base value and the demand
+index. Prices are denominated in this value, and base values are generally hidden from the user.
+Base values are transfered between accounts.
 
-\underline{Abstraction Layer over Accounts}
+\subsection{Exchange Transactions}
 
-To implement a currency design that does not constrain 
+Valid exchange transactions require a record of the payment, the quantity of goods to be
+transactions, and the goods category. It is always possible for buyers and sellers to collude to
+write in incorrect goods categories. The importance of recording the goods category is for measuring
+aggregate properties of a currency's transactions, and also to record that the transaction was
+indeed an exchange transaction and that no future contractural obligations remain. By using exchange
+transactions buyers and seller forfeit all future financial obligations, thereby reducing the
+utility of using exchange transactions for facilitating contract transactions.
+
+\subsection{Data Record}
+
+A record of transaction payment, goods category and quantity of goods are recorded, and used to
+calculate the $Q$, $P$ and $F$. The price index $P$ is published and used for calculation of time
+transactions. Methods to protect the privacy of accounts must be used. 
+
+\subsection{Indexed Unit of Account}
+
+\subsection{Time Transactions}
+
+Time transactions involve an initial payment and a later repayment. All monetary values in contracts
+for time transactions are written in indexed units of account and repayments are not facilitated on
+contracts in other units. The indexed unit of account records a base value which is then indexed by
+the price index. The receiving account for repayments for time transactions must be the same account
+from which the initial payment is made.
+
+\subsection{Contract Transactions}
+
+Contract transactions are prevented by only allowing repayments of time transactions into the same
+account from which the initial payment is made. Transactions that are not recorded as time
+transactions are not acceptable for setting up financial contractural obligations, so no party has
+any financial legal rights beyond time transactions. There remains likelihood that other
+transactions are used to achieve contract transactions, but the important requirement is that
+contract transactions are sufficiently limited to prevent effects that disturb the economy at
+aggregate level through interest rates, disturbance of control of aggregate demand, or positive
+feedback in speculative activity. 
+
+\subsection{Control}
+
+The demand index is determined using the data record so as to regulate $\Delta F / F$. Occassional
+unemployment surveys may be taken to confirm that the set point for $\Delta F / F$ is sufficiently
+high.
+
+\subsection{Intermediate Accounts}
+
+Because exchange transactions require a record of goods category, there is a need for intermediate
+accounts that sit between accounts that make exchange transactions. They also can be used as shared
+accounts. For example, membership fees are not directly associated with exchange transactions.
+Intermediate accounts must not interact directly with other intermediate accounts.
+
+\subsection{External Transactions}
+
+External transactions are not initially essential to a currency and introduce risk as they require
+interaction with other currencies. Once several currencesy are sufficiently established and
+reliable it may be possible to introduce extenal transactions. The external transaction mechanism
+would need a way to resolve coordination problems. One reasonable possibility would be to have
+special external transaction accounts which are limited in size, and have a fixed exchange rate that
+is the ratio of the price indices of the two currencies. 
 
 
-we need to reconsider the interaction between the micro-level, the economic participants and owners
-of accounts, and the macro-level requirements.
-
-The design strategy we take is to define the macro-level requirements and then to search for ways to
-control the currency so that the currency is likely to map out to those macro-level requirements.   
-
-We specify the macro-level requirements as
-
-1. Sustained stability.
-
-2. Macro-level equilibriation.
-
-Simple accounts that hold a number with some control of the aggregate value in all accounts is the
-digital equivalent of paper money. This design is insufficiently controlled to achieve our two
-macro-level requirements.   
-
-
-\subsection{Liveness}
-
-
-\subsection{Safety}
-
-
-
-TODO
-
-To achieve these outcomes we apply a abstraction layer over these accounts. This abstraction layer
-does the following:
-
-\underline{Exchange Transactions}
-
-1. Present to the user a value that is the product of the user's base account value and an single,
-global value that we call the demand index ($D_x$). This product is the value that users generally
-see and is the value in which price agreements are made. This value gradually changes as the demand
-index changes, appearing to users much as a bank account that has gradual increases as an interest
-rate is applied to it. As such, it presents no usability difficulties to the user.
-
-3. All exchange transactions must be associated with a quantity and a goods or service category. An
-exchange transaction is only valid if both the seller and buyer confirm the same goods or service
-category. This serves three purposes.
-
-a. It asserts that the transaction is an exchange transaction, and as such, has no associated
-contract with it beyond the current delivery of the goods or service. By doing this it confirms that
-there are no future legal commitments to any future repayment. This is required to limit the use of
-exchange transactions for the purpose of some other transaction category.
-
-b. The data can be used, with necessary software mechanism to ensure the privacy of the data, to
-accurately calculate the price index. 
-
-c. It serves as a record for the seller and buyer to resolve any disputes, i.e. it acts as a
-receipt or record of agreement.
-
-Beyond the seller and buyer entering the same goods and service category, it is easy for seller and
-buyer to collude and provide incorrect information.
-
-4. There are intermediate accounts. These are required because all exchange transactions must be
-associated
-
-TODO
-
-\underline{Time Transactions}
-
-2. Values that set future payments, in particular for repayments on time transactions, are
-denominated in a root value and the product of the price index ($P_x$). In this way, the purchasing
-power of that value remains absolutely constant, and as such there it present any possibility of
-inflation feedback. All repayments on time transactions must be defined at the time the money is
-borrowed and designated as a time transaction.
-
-\underline{Contract Transactions}
-
-Contract transactions are prevented by the requirement that borrowers must make repayments to the
-same party that initially lent the money. There are possible ways that users could subvert these
-requirements which we discuss in a later section.
-
-\underline{External Transactions}
-
-The provision of an exchange transaction mechanism will be deferred. The possibility of providing
-exchange transaction functionality with external currencies depends on the design of external
-currencies, in particular the accuracy of their price index, and their control over contract
-transactions. If we consider external transactions between two currencies of the kind we are
-presenting in this paper, then an external exchange rate fixed to the relative price index of the
-two currencies, and restricting transactions to exchange transactions by requiring the recording of
-goods or service cateogry and quantity may be a suitable design. This kind of system would require a
-pair of special aggregate accounts specifically for external transactions to pair up inflow and
-outflow. In this system, the pairing of inflow and outflow would halt if either account became
-empty. Another possibility would be to implement a floating exchange rate. The potential difficulty
-with this design is that it is relatively easy for users to use exchange accounts in lieu or time or
-contract transactions, and so it may be possible for users to engage in high-frequency capital
-interactions across the external boundary despite the disincentive of having no legal resort on
-repayment failure.
-
-\underline{Usability}
-
-The controls we plan to implement will have minimal impact on any user who intends to use the
-currency for exchange or time transactions. There is an additional requirement for both seller and
-buyer to agree on a transaction and to record goods category. Indexed units of account have been
-used in Chile for a number of decades without significant usability problems, and the use of indexed
-units of account in a digital currency could potentially further simplify their use.
-
-One important exception, however, are restrictions on the types of repayment schedules for time
-transactions. If repayment schedules are overly flexible, the repayments could possibly be used,
-given people's ingenuity in using financial mechanisms to enrich themselves, as a substitute for
-contract transactions. The extent to which this would happen in practice is unknown, and so starting
-with relatively strict controls and relaxing restrictions with experience is probably a reasonable
-approach.
-
-\underline{Using One Transaction Category in Lieu of Another}
-
-The are various methods that users may potentially use to one category of transaction of another.
-The most serious risk is that users find ways to make contract transactions. The main barrier to
-preventing this is to ensure that repayments can only be made to the initial lender's account. The
-second barrier is to ensure that there is no legal protection to protect creditors from debtor's
-failure to make ``repayments''. These barriers should be sufficient on the condition that there are
-no significant economic incentives for engaging in such activity. In general such users will choose to
-use other currencies, rather than a currency with these barriers.
-
+% \underline{Exchange Transactions}
+% 
+% 1. Present to the user a value that is the product of the user's base account value and an single,
+% global value that we call the demand index ($D_x$). This product is the value that users generally
+% see and is the value in which price agreements are made. This value gradually changes as the demand
+% index changes, appearing to users much as a bank account that has gradual increases as an interest
+% rate is applied to it. As such, it presents no usability difficulties to the user.
+% 
+% 3. All exchange transactions must be associated with a quantity and a goods or service category. An
+% exchange transaction is only valid if both the seller and buyer confirm the same goods or service
+% category. This serves three purposes.
+% 
+% a. It asserts that the transaction is an exchange transaction, and as such, has no associated
+% contract with it beyond the current delivery of the goods or service. By doing this it confirms that
+% there are no future legal commitments to any future repayment. This is required to limit the use of
+% exchange transactions for the purpose of some other transaction category.
+% 
+% b. The data can be used, with necessary software mechanism to ensure the privacy of the data, to
+% accurately calculate the price index. 
+% 
+% c. It serves as a record for the seller and buyer to resolve any disputes, i.e. it acts as a
+% receipt or record of agreement.
+% 
+% Beyond the seller and buyer entering the same goods and service category, it is easy for seller and
+% buyer to collude and provide incorrect information.
+% 
+% 4. There are intermediate accounts. These are required because all exchange transactions must be
+% associated
+% 
+% TODO
+% 
+% \underline{Time Transactions}
+% 
+% 2. Values that set future payments, in particular for repayments on time transactions, are
+% denominated in a root value and the product of the price index ($P_x$). In this way, the purchasing
+% power of that value remains absolutely constant, and as such there it present any possibility of
+% inflation feedback. All repayments on time transactions must be defined at the time the money is
+% borrowed and designated as a time transaction.
+% 
+% \underline{Contract Transactions}
+% 
+% Contract transactions are prevented by the requirement that borrowers must make repayments to the
+% same party that initially lent the money. There are possible ways that users could subvert these
+% requirements which we discuss in a later section.
+% 
+% \underline{External Transactions}
+% 
+% The provision of an exchange transaction mechanism will be deferred. The possibility of providing
+% exchange transaction functionality with external currencies depends on the design of external
+% currencies, in particular the accuracy of their price index, and their control over contract
+% transactions. If we consider external transactions between two currencies of the kind we are
+% presenting in this paper, then an external exchange rate fixed to the relative price index of the
+% two currencies, and restricting transactions to exchange transactions by requiring the recording of
+% goods or service cateogry and quantity may be a suitable design. This kind of system would require a
+% pair of special aggregate accounts specifically for external transactions to pair up inflow and
+% outflow. In this system, the pairing of inflow and outflow would halt if either account became
+% empty. Another possibility would be to implement a floating exchange rate. The potential difficulty
+% with this design is that it is relatively easy for users to use exchange accounts in lieu or time or
+% contract transactions, and so it may be possible for users to engage in high-frequency capital
+% interactions across the external boundary despite the disincentive of having no legal resort on
+% repayment failure.
+% 
+% \underline{Usability}
+% 
+% The controls we plan to implement will have minimal impact on any user who intends to use the
+% currency for exchange or time transactions. There is an additional requirement for both seller and
+% buyer to agree on a transaction and to record goods category. Indexed units of account have been
+% used in Chile for a number of decades without significant usability problems, and the use of indexed
+% units of account in a digital currency could potentially further simplify their use.
+% 
+% One important exception, however, are restrictions on the types of repayment schedules for time
+% transactions. If repayment schedules are overly flexible, the repayments could possibly be used,
+% given people's ingenuity in using financial mechanisms to enrich themselves, as a substitute for
+% contract transactions. The extent to which this would happen in practice is unknown, and so starting
+% with relatively strict controls and relaxing restrictions with experience is probably a reasonable
+% approach.
+% 
+% \underline{Using One Transaction Category in Lieu of Another}
+% 
+% The are various methods that users may potentially use to one category of transaction of another.
+% The most serious risk is that users find ways to make contract transactions. The main barrier to
+% preventing this is to ensure that repayments can only be made to the initial lender's account. The
+% second barrier is to ensure that there is no legal protection to protect creditors from debtor's
+% failure to make ``repayments''. These barriers should be sufficient on the condition that there are
+% no significant economic incentives for engaging in such activity. In general such users will choose to
+% use other currencies, rather than a currency with these barriers.
+% 

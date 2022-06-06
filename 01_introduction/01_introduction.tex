@@ -2,9 +2,9 @@
 
 Economic participants drive markets towards equilibrium. This process, however, is contrained by the
 technical properties of the currency used. This paper describes these technical properties and shows
-how by correctly isolating and controlling previously coupled components effective control of
-currency can be achieved that is highly likely to lead to sustained, stable aggregate economic
-equilibrium with full-employment. Around 1741 David Hume\cite{hume1741} observed that real economic
+how, by correctly isolating and controlling previously coupled components, effective control of
+currency can be achieved that is highly likely to lead to sustained, stable, aggregate economic
+equilibrium with full-employment. Around 1741 David Hume \cite{hume1741} observed that real economic
 conditions were affected by increases in money supply, which he noted was contrary to the notion
 that increases in the price as unit of measurement should be independent of the real factors,
 
@@ -35,36 +35,35 @@ that increases in the price as unit of measurement should be independent of the 
 
 Hume's considerations suggest that any effective economic model requires an understanding of both
 how economic participants interact in the market but also an understanding of the role of money in
-those market transactions. A basic supply and demand model infers a macro-economic equilibrium where
-aggregate demand and aggregate supply are in equality, or equivalently, that aggregate excess supply
-and demand across markets should average out to close to zero. Contrary to this expectation, all
-countries experience a sustained state of unemployment and excess aggregate supply as shown in
-Figure \ref{fig:ui_all_data}.
+those market transactions. The standard economic supply and demand model, independent of money, infers
+a macro-economic equilibrium where aggregate demand and aggregate supply are in equality, or
+equivalently, that aggregate excess supply and demand across markets should average out to close to
+zero. Contrary to this expectation, all countries experience a sustained state of unemployment and
+excess aggregate supply as shown in Figure \ref{fig:ui_all_data}.
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.48]{blank}
-\caption{Inflation Rate vs. Unemployment Data}
+\caption{Inflation Rate vs. Unemployment Rate for 30 Countries}
 \label{fig:ui_all_data}
 \end{figure}
 
-Given that any currency mechanism is absent from this model of supply and demand and that Hume's
-observations suggest currencies have significant effects, it seems reasonable to find a way to
-include currency in our model. This leads to the question of what methods should be used to analyze
-the properties of currency. Because currency is at its essence a information structure the way to
-approach this problem is the same way as other similar systems, an example being the internet, as an
-engineering problem, and in particularly as a problem of the engineering and control of dynamic
-systems. Economic theory approaches economic problems similarly to the way medicine treats the human
-body, by applying relatively small changes, such as medicine, in response to various pathologies.
-Destructuring and rebuilding biological systems is impossible. Importantly however, the control
-system for economies, the currency, can indeed be destructured and rebuilt from first principles.
-Thus we take a different approach, viewing currency more like a robotics problem, something that can
-be built from the bottom up. In general a currency is a set of accounts, eaching holding a number
-that can be transfered to other accounts, but we require a more concrete formulation of how economic
+Given that money is absent from this model of supply and demand and that Hume's observations suggest
+money has significant effects, it seems reasonable to find a way to include currency in our model.
+This leads to the question of what methods should be used to analyze the properties of currency.
+Because currency is in essence a information structure the way to approach this problem is the same
+way as other digital systems, such as then the internet, as an engineering problem, and in
+particularly as a problem of the engineering and control of dynamic systems. Economic theory
+approaches economic problems similarly to the way medicine treats the human body, by applying
+relatively small changes, such as medicine, in response to various pathologies. Destructuring and
+rebuilding biological systems is impossible. Importantly however, the control system for economies,
+the currency, can indeed be destructured and rebuilt from first principles. Thus we take a different
+approach, viewing currency more like a robotics problem, something that can be built from
+the bottom up. In general a currency is a set of accounts, eaching holding a number that can be
+transfered to other accounts, but we require a more concrete formulation of how economic
 participants \textit{use} the currency, and so we categorize the way a currency is used into
-different transaction types.  and these can be categorized into various types of transactions. We
-categorize the most common transactions into exchange transactions, time transactions, contract
-transactions and external transactions.
+different transaction types. We categorize the most common transactions into exchange transactions,
+time transactions, contract transactions and external transactions.
 
 \begin{figure}[H]
 \centering
@@ -73,8 +72,8 @@ transactions and external transactions.
 \label{fig:exchange_transaction1}
 \end{figure}
 
-An exchange transaction is a payment in return goods and services that occurs at one
-point in time.
+An exchange transaction (Figure \ref{fig:exchange_transaction1}.) is a payment in return goods and
+services that occurs at one point in time.
 
 \begin{figure}[H]
 \centering
@@ -83,9 +82,10 @@ point in time.
 \label{fig:time_transaction1}
 \end{figure}
 
-A time transaction extends an exchange transaction and involves the lending of currency at $t_0$.
-This money is then used by the borrower for an exchange transaction and a contractural obligation is
-established to the lender. At time $t_1$ the principal and interest is repaid to the lender.
+A time transaction (Figure \ref{fig:time_transaction1}.) extends an exchange transaction and involves
+the lending of currency at $t_0$.  This money is then used by the borrower for an exchange
+transaction and a contractural obligation is established to the lender. At time $t_1$ the principal
+and interest is repaid to the lender.
 
 \begin{figure}[H]
 \centering
@@ -94,13 +94,10 @@ established to the lender. At time $t_1$ the principal and interest is repaid to
 \label{fig:contract_transaction1}
 \end{figure}
 
-A contract transaction extends a time transaction and involves payment for a change in the status or
-ownership of a contractural obligation. We also consider external transactions between two
-currencies and other types of transactions.
-
-Feedback regulators are self-adjusting mechanisms that work to achieve some desired conditions in
-the plant by taking measurements from the plant and feeding back the deviation between the measured
-values and the desired set point back into the plant.
+A contract transaction (Figure \ref{fig:contract_transaction1}.) extends a time transaction and
+involves payment for a change in the status or ownership of a contractural obligation. At time $t=1$
+Lender 1 sells the contract to Lender 2. In Section \ref{sec:external_transactions}. external
+transactions are also examined.
 
 \begin{figure}[H]
 \centering
@@ -109,9 +106,12 @@ values and the desired set point back into the plant.
 \label{fig:feedback_schema1}
 \end{figure}
 
-Figure \ref{fig:economic_feedback_schema1} shows the feedback regulator for an economy. The plant
-consists of a currency, represented as a set of transactions, and the economic participants who
-interact using the currency to make transactions.
+Feedback regulators are mechanical devices that regulate dynamic processes. They are self-adjusting
+mechanisms that work to achieve some desired conditions in the plant by taking measurements from the
+plant and feeding back the deviation between the measured values and the desired set point back into
+the plant. Figure \ref{fig:economic_feedback_schema1}. shows the feedback regulator for an economy.
+The plant consists of a currency, represented as a set of accounts and transactions, and the
+economic participants who interact through markets using the currency to make transactions.
 
 \begin{figure}[H]
 \centering
@@ -122,13 +122,13 @@ interact using the currency to make transactions.
 
 Engineering method is applied to the the currency mechanism not the behaviour of people. The only
 assumption about the behaviour of economic participants is that they drive markets to equilibrium.
-Our general approach is to take a pared-down version of Figure \ref{fig:economic_feedback_schema1}
+Our general approach is to take a pared-down version of Figure \ref{fig:economic_feedback_schema1}.
 and step-by-step introduce each transaction type into the model, and then apply normal engineering
-analytical methods. We find that
+analytical methods, examining the interaction between transaction types. We find that
 
 1. Aggregate demand must be continuously increasing at a rate sufficient to compensate for errors.
 Without this requirement the currency constrains the space of possible transactions, preventing
-people from driving markets to macro-economic equilibrium.
+people from driving markets to aggregate equilibrium.
 
 2. All units written into contracts must be independent of the price level. Without this condition a
 positive-feedback instability can result in runaway behaviour under increases in the inflation rate.
@@ -138,5 +138,5 @@ in runaway behaviour in prices, difficulties in controlling an overly complex sy
 rate effects on time transaction. Preventing contract transactions also allows for a currency design
 with precise control over aggregate demand.
 
-A currency that implements these properties is highly likely to result in a economy with sustained
-stable aggregate equilibrium and full-employment. 
+A currency that implements these properties is highly likely to result in a economy with sustained,
+stable, aggregate equilibrium and full-employment. 

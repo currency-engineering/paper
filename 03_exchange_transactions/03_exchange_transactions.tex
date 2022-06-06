@@ -57,17 +57,13 @@ exchange transactions.
 \end{figure}
 
 Exchange transactions can be quantified as a payment $p$ denominated in dollars in exchange for
-quantity $q$ denominated in units specific to that good or service.
-
-We want to construct some aggregate variables from $p$ and $q$.
-
-We'll use the term \textit{goods category} to refer to a particular kind of good or service as this
-term more closely reflects the idea that the categories can be redefine at various levels of
-specificity or generality.
-
-Using a discrete time model, for each time period we will sum all the quantities of a given goods
-category $i$ so that we have a set of $q_i$s, and collect these into a vector $\overline Q$. We'll
-let $N$ be the total number of different goods categories.
+quantity $q$ denominated in units specific to that good or service. We want to construct some
+aggregate variables from $p$ and $q$. We'll use the term \textit{goods category} to refer to a
+particular kind of good or service as this term more closely reflects the idea that the categories
+can be redefine at various levels of specificity or generality. Using a discrete time model, for
+each time period we will sum all the quantities of a given goods category $i$ so that we have a set
+of $q_i$s, and collect these into a vector $\overline Q$. We'll let $N$ be the total number of
+different goods categories.
 
 \begin{equation} \label{eq:qbar}
     \overline Q = \left( q_1, \dots, q_N \right)
@@ -105,8 +101,8 @@ precise consider Alice who, when she receives a dollar, purchases goods randomly
 way that in the limit, after many purchases, the distribution of her purchases is in proportion to
 total transactions $\overline Q$ at that time. Suppose the price level at $t=0$ is $P_0$ and the
 price level at $t=1$ is $P_1$. We want a measure of price level such that if Alice spends $1$ dollar
-at $t=0$ and $P_1 / P_0$ dollars at $t=1$, then her expected value, $\varepsilon_1$, of her purchases as
-a proportion of $\overline Q_1$ should be equal to the expected value, $\varepsilon_0$, of her
+at $t=0$ and $P_1 / P_0$ dollars at $t=1$, then her expected value, $\overline \varepsilon_1$, of her purchases as
+a proportion of $\overline Q_1$ should be equal to the expected value, $\overline \varepsilon_0$, of her
 purchases as a proportion of $\overline Q_0$. In other words, we want
 
 \begin{equation} \label{eq:p_requirement}
@@ -150,9 +146,7 @@ trade-weighted averages at times $t=1$ and $t=0$.
 
 where
 
-\[
-    \gamma = [q_1] \frac {f_1} F + \cdots + [q_N] \frac {f_N} F 
-\]
+\[ \gamma = [q_1] \frac {f_1} F + \cdots + [q_N] \frac {f_N} F \]
 
 Now, because $\gamma$ depends only the average of the units in the baskets of goods, the distribution of
 $q_i$ around this average becomes irrelevant. This means that \textit{however} $\overline Q$
@@ -166,7 +160,9 @@ time. In Section \ref{section:time_transactions}. we show that the price unit wr
 contracts must be constant over time. To isolate these different units and construct a control
 system that has sufficient degrees of freedom required for control, the use of indices is useful.
 
-\section{Aggregate Demand, Aggregate Supply and Agreements}
+TODO
+
+\subsection{Aggregate Demand, Aggregate Supply and Agreements}
 
 From equation (\ref{eq:fpq})
 
@@ -194,7 +190,7 @@ supply. We are interested in aggregate supply and demand only to the extent that
 them. We may be able to control aggregate demand by changing the money supply. Historical experience
 indicates that at some times control is effective, and at other times control is less effective. The
 effectiveness of this control depends on the ability to control money supply, and the relationship
-between money supply and aggregate demand.  We assume that an increase in money supply will cause an
+between money supply and aggregate demand. We assume that an increase in money supply will cause an
 increase in aggregate demand. We want to be able to control aggregate demand through a feedback
 regulator. That means that this relationship needs only to be sufficiently strong that it responds
 to a feedback controller. This feedback controller may be a monetary authority or an algorithm.
