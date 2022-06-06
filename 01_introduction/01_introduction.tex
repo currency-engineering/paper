@@ -6,7 +6,7 @@ how, by correctly isolating and controlling previously coupled components, effec
 currency can be achieved that is highly likely to lead to sustained, stable, aggregate economic
 equilibrium with full-employment. Around 1741 David Hume \cite{hume1741} observed that real economic
 conditions were affected by increases in money supply, which he noted was contrary to the notion
-that increases in the price as unit of measurement should be independent of the real factors,
+that increases in the price, as a unit of measurement, should be independent of the real factors,
 
 \begin{quotation}
 \fontsize{8pt}{8pt}
@@ -51,19 +51,20 @@ excess aggregate supply as shown in Figure \ref{fig:ui_all_data}.
 Given that money is absent from this model of supply and demand and that Hume's observations suggest
 money has significant effects, it seems reasonable to find a way to include currency in our model.
 This leads to the question of what methods should be used to analyze the properties of currency.
-Because currency is in essence a information structure the way to approach this problem is the same
-way as other digital systems, such as then the internet, as an engineering problem, and in
-particularly as a problem of the engineering and control of dynamic systems. Economic theory
-approaches economic problems similarly to the way medicine treats the human body, by applying
-relatively small changes, such as medicine, in response to various pathologies. Destructuring and
-rebuilding biological systems is impossible. Importantly however, the control system for economies,
-the currency, can indeed be destructured and rebuilt from first principles. Thus we take a different
-approach, viewing currency more like a robotics problem, something that can be built from
-the bottom up. In general a currency is a set of accounts, eaching holding a number that can be
-transfered to other accounts, but we require a more concrete formulation of how economic
-participants \textit{use} the currency, and so we categorize the way a currency is used into
-different transaction types. We categorize the most common transactions into exchange transactions,
-time transactions, contract transactions and external transactions.
+Because currency is in essence a system much like other digital systems, such as the internet, it
+should be approached as an engineering problem, and more specifically as a problem of the
+engineering and control of dynamic systems. Economic theory approaches economic problems similarly
+to the way medicine treats the human body, by applying relatively small changes, such as medicine,
+in response to various pathologies. Destructuring and rebuilding biological systems is impossible.
+Importantly however, the control system for economies, the currency, can indeed be destructured and
+rebuilt from first principles. Thus we take a different approach, viewing currency more like a
+robotics problem, something that can be built from the bottom up. In general a currency is a set of
+accounts, each holding a number that can be transfered to other accounts, but a more concrete
+formulation of how economic participants \textit{use} the currency is required. A currency can be
+further specified, beyond just a set of accounts for transferring money, to a set of accounts on
+which certain well defined transaction types are applied. The most common transactions can be
+categorized into exchange transactions, time transactions, contract transactions and external
+transactions.
 
 \begin{figure}[H]
 \centering
@@ -84,8 +85,8 @@ services that occurs at one point in time.
 
 A time transaction (Figure \ref{fig:time_transaction1}.) extends an exchange transaction and involves
 the lending of currency at $t_0$.  This money is then used by the borrower for an exchange
-transaction and a contractural obligation is established to the lender. At time $t_1$ the principal
-and interest is repaid to the lender.
+transaction and a contractural obligation is set up between the lender and the borrower. At time
+$t_1$ the principal and interest is repaid to the lender.
 
 \begin{figure}[H]
 \centering
@@ -95,23 +96,24 @@ and interest is repaid to the lender.
 \end{figure}
 
 A contract transaction (Figure \ref{fig:contract_transaction1}.) extends a time transaction and
-involves payment for a change in the status or ownership of a contractural obligation. At time $t=1$
-Lender 1 sells the contract to Lender 2. In Section \ref{sec:external_transactions}. external
-transactions are also examined.
+involves payment in exchange for a change in the status or ownership of a contractural obligation.
+At time $t=1$ Lender 1 sells the contract to Lender 2. In Section \ref{sec:external_transactions}.
+external transactions are also examined.
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.60]{01_introduction/png/feedback_schema}
-\caption{Feedback Schema}
+\caption{Feedback Regulator Schema}
 \label{fig:feedback_schema1}
 \end{figure}
 
-Feedback regulators are mechanical devices that regulate dynamic processes. They are self-adjusting
-mechanisms that work to achieve some desired conditions in the plant by taking measurements from the
-plant and feeding back the deviation between the measured values and the desired set point back into
-the plant. Figure \ref{fig:economic_feedback_schema1}. shows the feedback regulator for an economy.
-The plant consists of a currency, represented as a set of accounts and transactions, and the
-economic participants who interact through markets using the currency to make transactions.
+Feedback regulators (Figure \ref{fig:feedback_schema1}.) are mechanical devices that regulate
+dynamic processes. They are self-adjusting mechanisms that work to achieve some desired conditions
+in the plant by taking measurements from the plant and feeding back the deviation between the
+measured values and the desired set point back into the plant. Figure
+\ref{fig:economic_feedback_schema1}. shows an economy modelled as a feedback regulator. The plant
+is a currency, represented as a set of accounts and transactions, and the economic participants who
+interact through markets using the currency to make transactions.
 
 \begin{figure}[H]
 \centering

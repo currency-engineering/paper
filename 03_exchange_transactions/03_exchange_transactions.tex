@@ -58,32 +58,32 @@ exchange transactions.
 
 Exchange transactions can be quantified as a payment $p$ denominated in dollars in exchange for
 quantity $q$ denominated in units specific to that good or service. We want to construct some
-aggregate variables from $p$ and $q$. We'll use the term \textit{goods category} to refer to a
+aggregate variables from $p$ and $q$. The term \textit{goods category} to used to refer to a
 particular kind of good or service as this term more closely reflects the idea that the categories
-can be redefine at various levels of specificity or generality. Using a discrete time model, for
+can be redefined at various levels of specificity or generality. Using a discrete time model, for
 each time period we will sum all the quantities of a given goods category $i$ so that we have a set
 of $q_i$s, and collect these into a vector $\overline Q$. We'll let $N$ be the total number of
 different goods categories.
 
 \begin{equation} \label{eq:qbar}
-    \overline Q = \left( q_1, \dots, q_N \right)
+    \overline Q = \left( q_1, \dots, q_n \right)
 \end{equation}
 
-The units for each $q_i$ can be different. We will denote a unit by enclosing it in square brackets,
-so that the units corresponding to each $q_i$ are
+The units for each $q_i$ are in general different. Units are denoted by enclosing in square
+brackets. The units corresponding to each $q_i$ are
 
-\[ \left( \left[ q_1 \right], \dots, \left[ q_N \right] \right) \]
+\[ \left( \left[ q_1 \right], \dots, \left[ q_n \right] \right) \]
 
-The average price $pi$ can be calculated by dividing total spending on goods category $i$ by $q_i$
+The average price $p_i$ can be calculated by dividing total spending on goods category $i$ by $q_i$
 and collecting them into a vector $\overline P$.
 
 \begin{equation} \label{eq:pbar}
-    \overline P = \left( p_1, \dots, p_N \right)
+    \overline P = \left( p_1, \dots, p_n \right)
 \end{equation}
 
 The corresponding units for $p_i$ are
 
-\[ \left( \left[ \frac {\$} {p_1} \right], \dots, \left[ \frac {\$} {p_N} \right] \right) \]
+\[ \left( \left[ \frac {\$} {p_1} \right], \dots, \left[ \frac {\$} {p_n} \right] \right) \]
 
 We cannot sum either these prices or quantities because they can have different units. But each
 payment $p_i q_i$ can be summed because its unit using dimensional analysis is
@@ -92,7 +92,7 @@ payment $p_i q_i$ can be summed because its unit using dimensional analysis is
 
 so we will let total payments $F$, denoted in dollars, be
 
-\[ F = p_i q_i + \dots + p_N q_N \]
+\[ F = p_i q_i + \dots + p_n q_n \]
 
 What do we require of an aggregate measure of the price level? As will become clear later in the
 paper (\ref{sec:constant_purchasing_power}) we require a measure of the price level $P$ that can be
@@ -119,7 +119,7 @@ consider only a single period of time that has $\overline Q$ transactions, then 
 this value in any unit of the form
 
 \begin{equation}\label{equation:basket}
-    \left( \left[ \gamma q_1 \right], \dots \left[ \gamma q_N \right] \right)
+    \left( \left[ \gamma q_1 \right], \dots \left[ \gamma q_n \right] \right)
 \end{equation}
 
 for any number $\gamma$. So in fact there is not just one, but a set of feasible units in which to
@@ -140,13 +140,13 @@ setting the rule that the proportion of $\gamma_1$ to $\gamma_0$ is equal to the
 trade-weighted averages at times $t=1$ and $t=0$. 
 
 \begin{equation}
-    \frac {\gamma_1} {\gamma_0} = \frac {\varepsilon \left( \left[ q_1 \right], \dots, \left[ q_N \right] \right)}
-    {\varepsilon \left( \left[ {q_1}' \right], \dots, \left[ {q_N}' \right] \right)}
+    \frac {\gamma_1} {\gamma_0} = \frac {\varepsilon \left( \left[ q_1 \right], \dots, \left[ q_n \right] \right)}
+    {\varepsilon \left( \left[ {q_1}' \right], \dots, \left[ {q_n}' \right] \right)}
 \end{equation}
 
 where
 
-\[ \gamma = [q_1] \frac {f_1} F + \cdots + [q_N] \frac {f_N} F \]
+\[ \gamma = [q_1] \frac {f_1} F + \cdots + [q_n] \frac {f_n} F \]
 
 Now, because $\gamma$ depends only the average of the units in the baskets of goods, the distribution of
 $q_i$ around this average becomes irrelevant. This means that \textit{however} $\overline Q$
@@ -155,7 +155,7 @@ changes, whatever its distribution, the relation $F=PQ$ is exact.
 This section has involved various manipulations of units, most critically the ratio of dollar
 payments to a quantity of some good or service of a collection of different quantities of goods and
 services. Throughout the paper we will see that questions of units are important. Section
-\ref{section:exchange_transactions_and_errors}. will show that the price unit must change over
+\ref{sec:exchange_transactions_and_errors}. will show that the price unit must change over
 time. In Section \ref{section:time_transactions}. we show that the price unit written into
 contracts must be constant over time. To isolate these different units and construct a control
 system that has sufficient degrees of freedom required for control, the use of indices is useful.
@@ -179,7 +179,7 @@ growth rate $G$ then
 Aggregate demand and aggregate demand are a set of transactions
 
 \begin{equation}
-    \sum_i p_i q_i
+    \sum_{i=1}^n p_i q_i
 \end{equation}
 
 Aggregate supply, $AS$, is the set of transactions that people will agree to sell if aggregate
@@ -230,5 +230,4 @@ The right hand side of Figure \ref{fig:symmetric_market_model} is a diagrammatic
 what the outcome of the symmetric market model should look like in measurements of the unemployment
 rates. Any measurement that represent excess aggregate demand will be mapped to an unemployment rate
 of zero or close to zero. Half the data-points should therefore sit close to an unemployment rate of
-zero. This model is inconsistent with many decades of unemployment data from the thirty or so
-countries with good quality unemployment data.
+zero. This model is inconsistent with many decades of unemployment data.
